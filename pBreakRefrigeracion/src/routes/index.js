@@ -1,8 +1,8 @@
 const router = require('express').Router();
+const { home } = require('../controllers/indexController');
+
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Presupuestos BreakR' });
-});
+router.get('/', home);
 
 module.exports = router;
