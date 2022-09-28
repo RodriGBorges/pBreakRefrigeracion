@@ -44,10 +44,28 @@
           <p><a href="#">Iniciar sesión</a></p>
         </div>
       </header>
-      
+      <section class="sectionPresupuestos">
+        <div class="divPresupuestos">
+          <%  clientes.forEach(cliente => { %> 
+            <article class="tarjetaP">
+              <div class="idFechaBox">
+                <p><%= cliente.id %></p>
+                <p><%= cliente.fechaPresupuesto %></p>
+              </div>
+              <div class="infoP">
+                <p><b>Cliente:</b> <%= cliente.nombreCliente %></p>
+                <p><b>Teléfono:</b> <%= cliente.telefonoCliente %></p>
+                <p><b>Clave:</b> <%= cliente.palabraClave %></p>
+                <a href="#">Ver</a>
+              </div>
+              <div class="precio">
+                <p>$ <%= cliente.precioTrabajoTotal %></p>
+              </div>
+            </article>
+          <% }) %> 
+        </div>
+      </section>
     </main>
-
     <%- include('./partials/footer') %>
-
   </body>
 </html>
