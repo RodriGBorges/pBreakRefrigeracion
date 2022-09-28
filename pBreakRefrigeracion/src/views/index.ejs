@@ -6,44 +6,7 @@
   </head>
   <body>
     <main class="home">
-      <nav class="navContacto">
-        <button class="homeNav"><a href="/"><i class="fas fa-home"></i></a></button>
-        <div class="info">
-          <p><i class="fab fa-whatsapp"></i> 1149690574</p>
-          <p><i class="fas fa-map-marker-alt"></i> Olivos</p>
-          <p><i class="far fa-clock"></i> Horario: Lunes a Sábados, 08:00hs a 18:00hs.</p>
-        </div>
-        <div class="redes">
-          <i class="wpp fab fa-whatsapp-square"></i>
-          <i class="fas fa-envelope-square"></i>
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-instagram-square"></i>
-        </div>
-      </nav>
-      <header>
-        <div class="logoDiv">
-          <img src="../../images/logo2.png" alt="Logo de Break Refrigeracion">
-        </div>
-        <div class="buscadorDiv">
-          <form action="#">
-            <input type="text" placeholder="Buscar presupuesto...">
-            <button class="bttnBuscar" type="submit"><i class="fas fa-search"></i></button>
-          </form>
-        </div>
-        <div class="navDivMobile" style="display: none;">
-          <button class="bttnBurger"><i class="fas fa-bars" id="burgerMenu"></i></button>
-          <div>
-            <ul>
-              <li><a href="#">Crear presupuesto</a></li>
-              <li><a href="#">Iniciar sesión</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="navDiv">
-          <p><a href="#">Crear presupuesto</a></p>
-          <p><a href="#">Iniciar sesión</a></p>
-        </div>
-      </header>
+      <%- include('./partials/header') %> 
       <section class="sectionPresupuestos">
         <div class="divPresupuestos">
           <%  clientes.forEach(cliente => { %> 
