@@ -1,0 +1,161 @@
+.headerNav nav.navContacto {
+    background-color: var(--celeste);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headerNav nav.navContacto section {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.headerNav nav.navContacto section div.info {
+    display: flex;
+    margin: 10px 20px;
+}
+
+.headerNav nav.navContacto section div.info p {
+    font-size: 12px;
+}
+
+
+.headerNav nav.navContacto section div.info p.ubic {
+    margin-right: 20px;
+}
+
+.headerNav nav.navContacto section div.redes {
+    display: flex;
+    margin-right: 20px;
+}
+
+.headerNav nav.navContacto section div.redes a {
+    color: var(--negro);
+    margin-right: 10px;
+}
+
+.headerNav section.hSectionGeneral {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--celeste);
+    justify-content: space-evenly;
+}
+
+.headerNav section.hSectionGeneral div.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1024px;
+}
+
+.headerNav section.hSectionGeneral div div.logoDiv {
+    max-width: 150px;
+    margin: 10px;
+}
+
+.headerNav section.hSectionGeneral div div.logoDiv img {
+    width: 100px;
+}
+
+.headerNav section.hSectionGeneral div form.buscadorForm {
+    display: flex;
+    height: 30px;
+}
+
+.headerNav section.hSectionGeneral div form.buscadorForm input {
+    padding: 5px;
+    border: 1px solid var(--celeste);
+    border-radius: 5px 0 0 5px;
+}
+
+.headerNav section.hSectionGeneral div form.buscadorForm input:focus {
+    outline: none;
+    border: 2px solid var(--celeste);
+    box-shadow: 5px 0px 10px rgba(161, 161, 161, 0.4);
+    transition: all .2s;
+}
+
+.headerNav section.hSectionGeneral div form.buscadorForm button.bttnBuscar {
+    border: none;
+    background-color: var(--celeste);
+    border-radius: 0 5px 5px 0;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.headerNav section.hSectionGeneral div div.navDivMobile {
+    height: 30px;
+    margin: 10px;
+}
+
+.headerNav section.hSectionGeneral div div.navDivMobile button.bttnBurger {
+    background-color: var(--celeste);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    height: 30px;
+    width: 28px;
+}
+
+.headerNav section.hSectionGeneral div div.navDivMobile div {
+    display: none;
+}
+
+.headerNav section.hSectionGeneral div div.navDiv {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    .headerNav nav.navContacto section div.info p.ubic, .headerNav nav.navContacto section div.info p.horarios {
+        font-size: 16px;
+        margin-right: 50px;
+    }
+
+    .headerNav nav.navContacto section div.redes i {
+        font-size: 25px;
+    }
+
+    .headerNav nav.navContacto section div.redes a:hover {
+        color: var(--fondo2);
+        transition: all .2s;
+    }
+
+    .headerNav section.hSectionGeneral div div.logoDiv img {
+        width: 100%;
+    }
+
+    .headerNav section.hSectionGeneral div form.buscadorForm input {
+        width: 200px;
+    }
+
+    .headerNav section.hSectionGeneral div div.navDivMobile {
+        display: none;
+    }
+    
+    .headerNav section.hSectionGeneral div div.navDiv {
+        display: flex;
+        justify-content: space-between;
+        width: 25%;
+    }
+
+    .headerNav section.hSectionGeneral div div.navDiv p:last-child {
+        margin-left: 15px;
+    }
+
+    .headerNav section.hSectionGeneral div div.navDiv p a {
+        color: var(--negro);
+    }
+
+    .headerNav section.hSectionGeneral div div.navDiv p a:hover {
+        color: var(--celeste);
+        transition: all .2s;
+    }
+
+    .headerNav section.hSectionGeneral div form.buscadorForm button.bttnBuscar i:hover {
+        color: var(--fondo2);
+        transition: all .2s;
+    }
+}
