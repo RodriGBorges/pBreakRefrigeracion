@@ -40,6 +40,7 @@
     align-items: center;
     border: 1px solid var(--celeste);
     justify-content: space-evenly;
+    background-color: var(--fondo2);
 }
 
 .headerNav section.hSectionGeneral div.headerContainer {

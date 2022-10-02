@@ -9,6 +9,9 @@
     --rubik: 'Rubik', sans-serif;
 }
 
+body {
+    background-color: var(--fondo);
+}
 
 * {
     margin: 0;
