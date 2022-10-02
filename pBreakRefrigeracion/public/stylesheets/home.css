@@ -1,0 +1,71 @@
+.home section.sectionPresupuestos {
+    margin: 15px 0;
+}
+
+.home section.sectionPresupuestos div.divPresupuestos {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1080px;
+}
+
+.home section.sectionPresupuestos div.divPresupuestos article.tarjetaP {
+    width: 45%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    max-width: 250px;
+}
+
+.home section.sectionPresupuestos div.divPresupuestos article.tarjetaP div.idFechaBox {
+    background-color: var(--celeste);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+
+}
+
+.home section.sectionPresupuestos div.divPresupuestos article.tarjetaP div.idFechaBox p {
+    font-weight: 700;
+    padding: 5px;
+}
+
+.home section.sectionPresupuestos div.divPresupuestos article.tarjetaP div.infoP {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+    position: relative;
+}
+
+.home section.sectionPresupuestos div.divPresupuestos article.tarjetaP div.infoP p {
+    padding: 5px;
+}
+
+.home section.sectionPresupuestos div.divPresupuestos article.tarjetaP div.infoP a {
+    color: var(--negro);
+    position: absolute;
+    left: 5px;
+    bottom: -20px;
+}
+
+.home section.sectionPresupuestos div.divPresupuestos article.tarjetaP div.precio {
+    background-color: var(--celesteClaro);
+    border-radius: 0 0 5px 5px;
+}
+
+.home section.sectionPresupuestos div.divPresupuestos article.tarjetaP div.precio p {
+    font-weight: 700;
+    text-align: end;
+    padding: 5px;
+}
+
+@media(min-width: 768px) {
+
+    .home section.sectionPresupuestos div.divPresupuestos article.tarjetaP div.infoP a:hover {
+        text-shadow: 1px 1px 2px var(--celeste);
+        transition: all .2s;
+    }
+}
