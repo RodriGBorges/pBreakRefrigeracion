@@ -10,7 +10,63 @@
         <section class="container">
             <h1>Crear presupuesto</h1>
             <div class="divContainer">
-
+                <form action="#" method="POST">
+                    <div class="divPClave">
+                        <label for="clave"><b>Clave:</b></label>
+                        <input type="text" name="clave" id="clave" placeholder="Palabra clave">
+                    </div>
+                    <div class="divCliente">
+                        <h5>Datos del cliente</h5>
+                        <input type="text" name="nombre" placeholder="Nombre">
+                        <input type="text" name="direccion" placeholder="Dirección">
+                        <input type="number" name="telefono" placeholder="Teléfono">
+                        <input type="number" name="garantia" placeholder="Garantía">
+                    </div>
+                    <h4>Trabajos</h4>
+                    <div class="divTrabajos">
+                        <article>
+                            <input type="text" name="trabajo0" placeholder="Trabajo realizado">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio0" placeholder="Precio">
+                            </div>
+                        </article>
+                        <article>
+                            <input type="text" name="trabajo1" placeholder="Trabajo realizado">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio1" placeholder="Precio">
+                            </div>
+                        </article>
+                        <article>
+                            <input type="text" name="trabajo2" placeholder="Trabajo realizado">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio2" placeholder="Precio">
+                            </div>
+                        </article>
+                        <article class="artBttn">
+                            <button class="bttnVerMasTrabajos" id="masTrabajos">Más</button>
+                        </article>
+                        <% for( let i = 3; i <= 9; i++ ) { %>
+                            <article id="mostrarTrabajos">
+                                <input type="text" name="trabajo<%= i %>" placeholder="Trabajo realizado">
+                                <div>
+                                    <label for="precio"><b>$:</b></label>
+                                    <input type="number" name="precio<%= i %>" placeholder="Precio">
+                                </div>
+                            </article>
+                        <% } %>
+                    </div>
+                    <article class="artBttn">
+                        <button class="bttnVerDescripcion" id="bttnDescripcion">Agregar descripción</button>
+                    </article>
+                    <h4 class="descripcion">Descripción adicional</h4>
+                    <div class="divDescripcion">
+                        <textarea name="descripcion" placeholder="Descripción..."></textarea>
+                    </div>
+                    <button type="submit" class="bttnCrear">Crear</button>
+                </form>
             </div>
         </section>
     </main>
