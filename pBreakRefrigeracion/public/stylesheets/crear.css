@@ -114,11 +114,12 @@
     border: none;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     font-weight: 600;
-    width: 200px;
+    width: 150px;
+    cursor: pointer;
 }
 /* ---------------------------- ocultar si.. */
 .crear section.container div.divContainer form div.divTrabajos article.mostrarTrabajos {
-    display: block;
+    display: none;
 }
 /* ------------------ */
 
@@ -132,11 +133,14 @@
     border: none;
     background-color: var(--celeste);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    width: 200px;
+    width: 150px;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 /* ------------------------- ocultar si.. */
 .crear section.container div.divContainer form h4.descripcion {
+    display: none;
     width: 100%;
     background-color: var(--celesteClaro);
     padding: 5px;
@@ -147,6 +151,7 @@
 }
 
 .crear section.container div.divContainer form div.divDescripcion {
+    display: none;
     margin-bottom: 20px;
 }
 
@@ -155,6 +160,13 @@
     border: 1px solid var(--negro);
     width: 250px;
     height: 100px;
+}
+
+.crear section.container div.divContainer form div.divDescripcion textarea:focus {
+    outline: none;
+    border: 2px solid var(--celeste);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: all .2s;
 }
 
 /* ----------------------- */
@@ -167,4 +179,35 @@
     padding: 5px;
     font-weight: 600;
     width: 200px;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+
+    .crear section.container div.divContainer {
+        max-width: 600px;
+    }
+
+    .crear section.container div.divContainer form div.divPClave input {
+        margin-left: 10px;
+        width: 250px;
+    }
+
+    .crear section.container div.divContainer form div.divTrabajos article, .crear section.container div.divContainer form div.divTrabajos article.mostrarTrabajos {
+        flex-direction: row;
+    }
+
+    .crear section.container div.divContainer form div.divTrabajos article.artBttn button, .crear section.container div.divContainer form article.artBttn button.bttnVerDescripcion, .crear section.container div.divContainer form button.bttnCrear {
+        box-shadow: none;
+    }
+
+    .crear section.container div.divContainer form div.divTrabajos article.artBttn button:hover, .crear section.container div.divContainer form article.artBttn button.bttnVerDescripcion:hover, .crear section.container div.divContainer form button.bttnCrear:hover {
+        color: var(--fondo2);
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        transition: all .2s;
+    }
+
+    .crear section.container div.divContainer form div.divTrabajos article div {
+        margin-left: 15px;
+    }
 }
