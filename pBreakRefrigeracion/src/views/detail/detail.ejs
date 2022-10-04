@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Presupuesto N° <%= presupuesto.id %></title>
+    <%- include('../partials/head') %>
+</head>
+<body>
+    <main class="detail">
+        <%- include('../partials/header') %>
+        <h1>Presupuesto N° <%= presupuesto.id %></h1>
+        <section>
+            <h4>Vista detail del cliente <%= presupuesto.nombreCliente %> </h4>
+            <h4>Los trabajos de este cliente son: </h4>
+            <% for( let i = 0; i < trabajosCliente.length; i++ ) { %>
+                <h6><%= trabajosCliente[i].trabajo %></h6>
+                <h6>$<%= trabajosCliente[i].precio %></h6>
+            <% } %>
+        </section>
+    </main>
+    <%- include('../partials/footer') %>
+</body>
+</html>
