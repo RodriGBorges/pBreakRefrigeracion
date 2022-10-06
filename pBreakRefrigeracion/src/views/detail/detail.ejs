@@ -7,14 +7,14 @@
 <body>
     <main class="detail">
         <%- include('../partials/header') %>
-        <section>
+        <section class="sectionD">
+            <article class="fechaId">
+                <p><%= presupuesto.fechaPresupuesto  %></p>
+                <p>Presupuesto N° <%= presupuesto.id  %></p>
+            </article>
             <table class="tablaInfo">
-                <thead class="encabezadoInfo">
-                    <tr>
-                        <th><%= presupuesto.fechaPresupuesto  %></th>
-                        <th>Presupuesto N° <%= presupuesto.id  %></th>
-                    </tr>
-                    <tr>
+                <thead>
+                    <tr class="infoTitulo2">
                         <th>Datos de la empresa</th>
                         <th>Datos del cliente</th>
                     </tr>
@@ -36,13 +36,11 @@
                         <td class="infoEmpresa"><b>E-mail:</b> emailEmpresa@hotmail.com</td>
                     </tr>
                 </tbody>
-                <tbody class="cuerpoFecha">
-                    <tr>
-                        <td><b>Fecha presupuesto:</b> <%= presupuesto.fechaPresupuesto %></td>
-                        <td><b>Garantía:</b> <%= presupuesto.garantia %></td>
-                    </tr>
-                </tbody>
             </table>
+            <article class="fechaGarantia">
+                <p><b>Fecha de presupuesto:</b> <%= presupuesto.fechaPresupuesto %></p>
+                <p><b>Garantía:</b> <%= presupuesto.garantia %> días</p>
+            </article>
             <table class="tablaTrabajos">
                 <thead class="encabezadoTrabajos">
                     <tr>
@@ -62,13 +60,11 @@
                         </tr>
                     <% } %>
                 </tbody>
-                <tbody class="cuerpoTotal">
-                    <tr>
-                        <td>Total:</td>
-                        <td>$ <%= presupuesto.precioTrabajoTotal %></td>
-                    </tr>
-                </tbody>
             </table>
+            <article class="artTotal">
+                <p>Total:</p>
+                <p>$ <%= presupuesto.precioTrabajoTotal %></p>
+            </article>
             <% if (presupuesto.descripcion != 0) { %>
                 <article class="descripcion">
                     <h4>Descripción</h4>
@@ -77,7 +73,7 @@
             <% } %>
             <% if (presupuesto.palabraClave != 0) { %>
                 <article class="palabraClave">
-                    <h4><b>Clave:</b> <%= presupuesto.palabraClave %></h4>
+                    <h4><b>Palabra clave:</b> <%= presupuesto.palabraClave %></h4>
                 </article>
             <% } %>
         </section>
