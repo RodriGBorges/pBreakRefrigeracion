@@ -1,0 +1,148 @@
+.detail section.sectionD {
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid var(--negro);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.detail section.sectionD article.fechaId {
+    background-color: var(--celeste);
+    border-bottom: 1px solid var(--negro);
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail section.sectionD article.fechaId p {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.detail section.sectionD article.fechaId p:first-child {
+    margin-left: 5px;
+}
+
+.detail section.sectionD article.fechaId p:last-child {
+    margin-right: 5px;
+}
+
+.detail section.sectionD table.tablaInfo {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1px solid;
+}
+
+.detail section.sectionD table.tablaInfo thead {
+    background-color: var(--celeste);
+}
+
+.detail section.sectionD table.tablaInfo thead tr th {
+    border-bottom: 1px solid;
+}
+
+.detail section.sectionD table.tablaInfo thead tr th:first-child {
+    border-right: 1px solid;
+}
+
+.detail section.sectionD table.tablaInfo tbody.cuerpoInfo tr td.infoEmpresa {
+    border-right: 1px solid;
+    padding: 5px;
+}
+
+.detail section.sectionD table.tablaInfo tbody.cuerpoInfo tr td.infoCliente {
+    padding: 5px;
+}
+
+.detail section.sectionD article.fechaGarantia {
+    margin: 10px 0;
+    border-top: 1px solid var(--negro);
+    border-bottom: 1px solid var(--negro);
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail section.sectionD article.fechaGarantia p {
+    padding: 5px;
+}
+
+.detail section.sectionD table.tablaTrabajos {
+    width: 100%;
+    border-top: 1px solid;
+    border-collapse: collapse;
+}
+
+.detail section.sectionD table.tablaTrabajos thead.encabezadoTrabajos {
+    background-color: var(--celeste);
+}
+
+.detail section.sectionD table.tablaTrabajos thead.encabezadoTrabajos tr th {
+    padding: 5px;
+    border-bottom: 1px solid;
+}
+
+.detail section.sectionD table.tablaTrabajos thead.encabezadoTrabajos tr th.tituloTrabajo {
+    border-right: 1px solid;
+}
+
+.detail section.sectionD table.tablaTrabajos tbody.cuerpoTrabajos tr {
+    border-bottom: 1px solid;
+}
+
+.detail section.sectionD table.tablaTrabajos tbody.cuerpoTrabajos tr td.trabajos {
+    border-right: 1px solid;
+}
+
+.detail section.sectionD table.tablaTrabajos tbody.cuerpoTrabajos tr td.precio, .detail section.sectionD table.tablaTrabajos tbody.cuerpoTrabajos tr td {
+    padding: 5px;
+}
+
+.detail section.sectionD table.tablaTrabajos tbody.cuerpoTrabajos tr td.precio {
+    text-align: center;
+}
+
+.detail section.sectionD article.artTotal {
+    background-color: var(--celeste);
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail section.sectionD article.artTotal p {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.detail section.sectionD article.artTotal p:first-child {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.detail section.sectionD article.artTotal p:last-child {
+    text-align: end;
+}
+
+.detail section.sectionD article.descripcion {
+    margin-bottom: 10px;
+}
+
+.detail section.sectionD article.descripcion h4 {
+    background-color: var(--celesteClaro);
+    border-top: 1px solid var(--negro);
+    border-bottom: 1px solid var(--negro);
+    text-align: center;
+    padding: 5px;
+}
+
+.detail section.sectionD article.descripcion p {
+    padding: 5px;
+}
+
+.detail section.sectionD article.palabraClave {
+    border-top: 1px solid var(--negro);
+}
+
+.detail section.sectionD article.palabraClave h4 {
+    background-color: var(--celesteClaro);
+    text-align: center;
+    padding: 5px;
+}
