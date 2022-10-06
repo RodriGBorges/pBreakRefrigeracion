@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "palabraClave": "Aire 2500fr",
+        "palabraClave": 0,
         "fechaPresupuesto": "2022-01-25",
         "nombreCliente": "Roberto",
-        "direccionCliente": "Olivos, Calle 1 entre Calle 2 y Calle 3",
+        "direccionCliente": "Olivos, Calle 1 entre Calle 2 y Calle 3, Olivos, Calle 1 entre Calle 2 y Calle 3",
         "telefonoCliente": "1234567890",
         "garantia": 30,
-        "descripcion": "Anim sint duis minim non magna labore id aliqua ullamco consectetur labore sint et elit. Consequat elit laborum ipsum non adipisicing magna elit in nisi sint. Culpa magna sit velit fugiat nisi quis nisi. Fugiat ullamco aliquip exercitation labore aliqua elit tempor laborum dolore esse. Amet aliquip cupidatat dolor reprehenderit eu. Nisi sunt ut ut tempor et tempor fugiat reprehenderit irure occaecat enim. Incididunt nisi magna dolor id nisi.",
+        "descripcion": 0,
         "precioTrabajoTotal": 0
     },
     {

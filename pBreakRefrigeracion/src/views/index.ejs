@@ -19,7 +19,7 @@
                 <p><b>Cliente:</b> <%= cliente.nombreCliente %></p>
                 <p><b>Teléfono:</b> <%= cliente.telefonoCliente %></p>
                 <p><b>Clave:</b> <%= cliente.palabraClave %></p>
-                <a href="#">Ver</a>
+                <a href="/presupuesto/<%= cliente.id %>">Ver</a>
               </div>
               <div class="precio">
                 <p>$ <%= cliente.precioTrabajoTotal %></p>

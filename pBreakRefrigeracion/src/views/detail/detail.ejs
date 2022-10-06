@@ -7,13 +7,78 @@
 <body>
     <main class="detail">
         <%- include('../partials/header') %>
-        <h1>Presupuesto N° <%= presupuesto.id %></h1>
         <section>
-            <h4>Vista detail del cliente <%= presupuesto.nombreCliente %> </h4>
-            <h4>Los trabajos de este cliente son: </h4>
-            <% for( let i = 0; i < trabajosCliente.length; i++ ) { %>
-                <h6><%= trabajosCliente[i].trabajo %></h6>
-                <h6>$<%= trabajosCliente[i].precio %></h6>
+            <table class="tablaInfo">
+                <thead class="encabezadoInfo">
+                    <tr>
+                        <th><%= presupuesto.fechaPresupuesto  %></th>
+                        <th>Presupuesto N° <%= presupuesto.id  %></th>
+                    </tr>
+                    <tr>
+                        <th>Datos de la empresa</th>
+                        <th>Datos del cliente</th>
+                    </tr>
+                </thead>
+                <tbody class="cuerpoInfo">
+                    <tr>
+                        <td class="infoEmpresa"><b>Nombre de la empresa:</b> Break Refrigeracion</td>
+                        <td class="infoCliente"><b>Nombre:</b> <%= presupuesto.nombreCliente %></td>
+                    </tr>
+                    <tr>
+                        <td class="infoEmpresa"><b>Dirección:</b> Olivos</td>
+                        <td class="infoCliente"><b>Dirección:</b> <%= presupuesto.direccionCliente %></td>
+                    </tr>
+                    <tr>
+                        <td class="infoEmpresa"><b>Teléfono:</b> 1234567890</td>
+                        <td class="infoCliente"><b>Teléfono:</b> <%= presupuesto.telefonoCliente %></td>
+                    </tr>
+                    <tr>
+                        <td class="infoEmpresa"><b>E-mail:</b> emailEmpresa@hotmail.com</td>
+                    </tr>
+                </tbody>
+                <tbody class="cuerpoFecha">
+                    <tr>
+                        <td><b>Fecha presupuesto:</b> <%= presupuesto.fechaPresupuesto %></td>
+                        <td><b>Garantía:</b> <%= presupuesto.garantia %></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tablaTrabajos">
+                <thead class="encabezadoTrabajos">
+                    <tr>
+                        <th class="tituloTrabajo">Trabajos</th>
+                        <th class="tituloPrecio">Precio</th>
+                    </tr>
+                </thead>
+                <tbody class="cuerpoTrabajos">
+                    <% for( let i = 0; i < trabajosCliente.length; i++ ) { %>
+                        <tr>
+                            <td class="trabajos">
+                                <%= trabajosCliente[i].trabajo %>
+                            </td>
+                            <td class="precio">
+                                <%= trabajosCliente[i].precio %>
+                            </td>
+                        </tr>
+                    <% } %>
+                </tbody>
+                <tbody class="cuerpoTotal">
+                    <tr>
+                        <td>Total:</td>
+                        <td>$ <%= presupuesto.precioTrabajoTotal %></td>
+                    </tr>
+                </tbody>
+            </table>
+            <% if (presupuesto.descripcion != 0) { %>
+                <article class="descripcion">
+                    <h4>Descripción</h4>
+                    <p><%= presupuesto.descripcion %></p>
+                </article>
+            <% } %>
+            <% if (presupuesto.palabraClave != 0) { %>
+                <article class="palabraClave">
+                    <h4><b>Clave:</b> <%= presupuesto.palabraClave %></h4>
+                </article>
             <% } %>
         </section>
     </main>
