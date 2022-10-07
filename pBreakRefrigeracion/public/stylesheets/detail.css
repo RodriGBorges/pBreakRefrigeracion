@@ -6,11 +6,13 @@
 }
 
 .detail section.sectionD article.fechaId {
+    position: relative;
     background-color: var(--celeste);
     border-bottom: 1px solid var(--negro);
     display: flex;
     justify-content: space-between;
 }
+
 
 .detail section.sectionD article.fechaId p {
     font-size: 18px;
@@ -18,12 +20,24 @@
     padding: 5px;
 }
 
-.detail section.sectionD article.fechaId p:first-child {
-    margin-left: 5px;
+.detail section.sectionD article.fechaId a {
+    position: absolute;
+    right: 5px;
+    bottom: -28px;
+    background-color: var(--negro);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--celeste);
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
 }
 
-.detail section.sectionD article.fechaId p:last-child {
-    margin-right: 5px;
+.detail section.sectionD article.fechaId a i {
+    cursor: pointer;
 }
 
 .detail section.sectionD table.tablaInfo {
@@ -38,14 +52,6 @@
 
 .detail section.sectionD table.tablaInfo thead tr th {
     border-bottom: 1px solid;
-}
-
-.detail section.sectionD table.tablaInfo thead tr th:first-child {
-    border-right: 1px solid;
-}
-
-.detail section.sectionD table.tablaInfo tbody.cuerpoInfo tr td.infoEmpresa {
-    border-right: 1px solid;
     padding: 5px;
 }
 
@@ -145,4 +151,16 @@
     background-color: var(--celesteClaro);
     text-align: center;
     padding: 5px;
+}
+
+@media(min-width: 768px) {
+
+    .detail section.sectionD {
+        max-width: 920px;
+    }
+
+    .detail section.sectionD article.fechaId a:hover {
+        background-color: var(--fondo2);
+        transition: all .2s;
+    }
 }

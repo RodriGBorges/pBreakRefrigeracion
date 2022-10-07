@@ -11,29 +11,23 @@
             <article class="fechaId">
                 <p><%= presupuesto.fechaPresupuesto  %></p>
                 <p>Presupuesto N° <%= presupuesto.id  %></p>
+                <a href="/admin/editar/<%= presupuesto.id %>"><i class="fas fa-wrench"></i></a>
             </article>
             <table class="tablaInfo">
                 <thead>
-                    <tr class="infoTitulo2">
-                        <th>Datos de la empresa</th>
+                    <tr>
                         <th>Datos del cliente</th>
                     </tr>
                 </thead>
                 <tbody class="cuerpoInfo">
                     <tr>
-                        <td class="infoEmpresa"><b>Nombre de la empresa:</b> Break Refrigeracion</td>
                         <td class="infoCliente"><b>Nombre:</b> <%= presupuesto.nombreCliente %></td>
                     </tr>
                     <tr>
-                        <td class="infoEmpresa"><b>Dirección:</b> Olivos</td>
                         <td class="infoCliente"><b>Dirección:</b> <%= presupuesto.direccionCliente %></td>
                     </tr>
                     <tr>
-                        <td class="infoEmpresa"><b>Teléfono:</b> 1234567890</td>
                         <td class="infoCliente"><b>Teléfono:</b> <%= presupuesto.telefonoCliente %></td>
-                    </tr>
-                    <tr>
-                        <td class="infoEmpresa"><b>E-mail:</b> emailEmpresa@hotmail.com</td>
                     </tr>
                 </tbody>
             </table>
