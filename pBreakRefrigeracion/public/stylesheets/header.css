@@ -38,8 +38,8 @@
 .headerNav section.hSectionGeneral {
     display: flex;
     align-items: center;
+    flex-direction: column;
     border: 1px solid var(--celeste);
-    justify-content: space-evenly;
     background-color: var(--fondo2);
 }
 
@@ -106,6 +106,16 @@
 
 .headerNav section.hSectionGeneral div div.navDiv {
     display: none;
+}
+
+.headerNav section.hSectionGeneral article {
+    width: 380px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerNav section.hSectionGeneral article small {
+    padding-bottom: 5px;
 }
 
 @media (min-width: 768px) {
