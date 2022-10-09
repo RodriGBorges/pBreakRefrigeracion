@@ -8,13 +8,7 @@ module.exports = {
     vistaEditar: (req, res) => {
         const {id} = req.params;
         const presupuesto = clientes.find(cliente => cliente.id === parseInt(id));
-
-        let trabajosCliente = [];
-        for (let i = 0; i < trabajos.length; i++) {
-            if(trabajos[i].id == id) {
-                trabajosCliente.push(trabajos[i])
-            }
-        }
+        const trabajosCliente = trabajos.find(trabajo => trabajo.id === parseInt(id));
 
         res.render('admin/editar', {presupuesto, trabajosCliente})
     }
