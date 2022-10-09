@@ -1,187 +1,116 @@
 [
     {
         "id": 1,
-        "trabajo": "Instalación Aire 2500 Frigorías",
-        "precio": 0
+        "trabajo0": "Instalación Aire 2500 Frigorías",
+        "precio0": 0
     },
     {
         "id": 2,
-        "trabajo": "Instalación Aire 2500 Frigorías",
-        "precio": 0
-    },
-    {
-        "id": 2,
-        "trabajo": "Limpieza completa de aire acondicionado",
-        "precio": 0
+        "trabajo0": "Instalación Aire 2500 Frigorías",
+        "precio0": 0,
+        "trabajo1": "Limpieza completa de aire acondicionado",
+        "precio1": 0
     },
     {
         "id": 3,
-        "trabajo": "Instalación Aire 2200 Frigorías",
-        "precio": 0
-    },
-    {
-        "id": 3,
-        "trabajo": "Reparación de aire acondicionado, fallo en termostato",
-        "precio": 0
+        "trabajo0": "Instalación Aire 2200 Frigorías",
+        "precio0": 0,
+        "trabajo1": "Reparación de aire acondicionado, fallo en termostato",
+        "precio1": 0
     },
     {
         "id": 4,
-        "trabajo": "Instalación Aire frío/calor 4500 Frigorías",
-        "precio": 0
-    },
-    {
-        "id": 4,
-        "trabajo": "Instalación Aire frío/calor 4500 Frigorías",
-        "precio": 0
+        "trabajo0": "Instalación Aire frío/calor 4500 Frigorías",
+        "precio0": 0,
+        "trabajo1": "Instalación Aire frío/calor 4500 Frigorías",
+        "precio1": 0
     },
     {
         "id": 5,
-        "trabajo": "Instalación Aire 2200 Frigorías",
-        "precio": 0
-    },
-    {
-        "id": 5,
-        "trabajo": "Instalación Aire 2200 Frigorías",
-        "precio": 0
+        "trabajo0": "Instalación Aire 2200 Frigorías",
+        "precio0": 0,
+        "trabajo1": "Instalación Aire 2200 Frigorías",
+        "precio1": 0
     },
     {
         "id": 6,
-        "trabajo": "Limpieza de aire",
-        "precio": 0
-    },
-    {
-        "id": 6,
-        "trabajo": "Limpieza de aire",
-        "precio": 0
+        "trabajo0": "Limpieza de aire",
+        "precio0": 0,
+        "trabajo1": "Limpieza de aire",
+        "precio1": 0
     },
     {
         "id": 7,
-        "trabajo": "Reparación de aire",
-        "precio": 0
-    },
-    {
-        "id": 7,
-        "trabajo": "Reparación de aire",
-        "precio": 0
+        "trabajo0": "Reparación de aire",
+        "precio0": 0,
+        "trabajo1": "Reparación de aire",
+        "precio1": 0
     },
     {
         "id": 8,
-        "trabajo": "Instalación de aire acondicionado 3200 frigorías",
-        "precio": 0
-    },
-    {
-        "id": 8,
-        "trabajo": "Trabajo en altura",
-        "precio": 0
+        "trabajo0": "Instalación de aire acondicionado 3200 frigorías",
+        "precio0": 0,
+        "trabajo1": "Trabajo en altura",
+        "precio1": 0
     },
     {
         "id": 9,
-        "trabajo": "Instalación de aire acondicionado 2200 frigorías",
-        "precio": 0
-    },
-    {
-        "id": 9,
-        "trabajo": "Trabajo en altura",
-        "precio": 0
+        "trabajo0": "Instalación de aire acondicionado 2200 frigorías",
+        "precio0": 0,
+        "trabajo1": "Trabajo en altura",
+        "precio1": 0
     },
     {
         "id": 10,
-        "trabajo": "Reparación de aire, mal funcionamiento en ventiladores",
-        "precio": 0
-    },
-    {
-        "id": 10,
-        "trabajo": "Limpieza filtros",
-        "precio": 0
-    },
-    {
-        "id": 10,
-        "trabajo": "Limpieza filtros",
-        "precio": 0
-    },
-    {
-        "id": 10,
-        "trabajo": "Limpieza filtros",
-        "precio": 0
+        "trabajo0": "Reparación de aire, mal funcionamiento en ventiladores",
+        "precio0": 0,
+        "trabajo1": "Limpieza filtros",
+        "precio1": 0,
+        "trabajo2": "Limpieza filtros",
+        "precio2": 0,
+        "trabajo3": "Limpieza filtros",
+        "precio3": 0
     },
     {
         "id": 11,
-        "trabajo": "Limpieza completa",
-        "precio": 5000
-    },
-    {
-        "id": 11,
-        "trabajo": "Limpieza completa",
-        "precio": 5000
-    },
-    {
-        "id": 11,
-        "trabajo": "Limpieza completa",
-        "precio": 5000
-    },
-    {
-        "id": 11,
-        "trabajo": "Limpieza completa",
-        "precio": 5000
-    },
-    {
-        "id": 11,
-        "trabajo": "Limpieza completa",
-        "precio": 5000
-    },
-    {
-        "id": 11,
-        "trabajo": "Limpieza completa",
-        "precio": 5000
+        "trabajo0": "Limpieza completa",
+        "precio0": 5000,
+        "trabajo1": "Limpieza completa",
+        "precio1": 5000,
+        "trabajo2": "Limpieza completa",
+        "precio2": 5000,
+        "trabajo3": "Limpieza completa",
+        "precio3": 5000,
+        "trabajo4": "Limpieza completa",
+        "precio4": 5000,
+        "trabajo5": "Limpieza completa",
+        "precio5": 5000
     },
     {
         "id": 12,
-        "trabajo": "Instalación Aire Frío/Calor 4500 Frigorías",
-        "precio": 0
-    },
-    {
-        "id": 12,
-        "trabajo": "Instalación Aire Frío/Calor 4500 Frigorías",
-        "precio": 0
-    },
-    {
-        "id": 12,
-        "trabajo": "Instalación Aire Frío/Calor 4500 Frigorías",
-        "precio": 0
-    },
-    {
-        "id": 12,
-        "trabajo": "Instalación Aire Frío/Calor 4500 Frigorías",
-        "precio": 0
-    },
-    {
-        "id": 12,
-        "trabajo": "Instalación Aire Frío/Calor 4500 Frigorías",
-        "precio": 0
-    },
-    {
-        "id": 12,
-        "trabajo": "Instalación Aire Frío/Calor 4500 Frigorías",
-        "precio": 0
-    },
-    {
-        "id": 12,
-        "trabajo": "Instalación Aire Frío/Calor 4500 Frigorías",
-        "precio": 0
-    },
-    {
-        "id": 12,
-        "trabajo": "Instalación Aire Frío/Calor 4500 Frigorías",
-        "precio": 0
-    },
-    {
-        "id": 12,
-        "trabajo": "Instalación Aire Frío/Calor 4500 Frigorías",
-        "precio": 0
-    },
-    {
-        "id": 12,
-        "trabajo": "Instalación Aire Frío/Calor 4500 Frigorías",
-        "precio": 0
+        "trabajo0": "Instalación Aire Frío/Calor 4500 Frigorías",
+        "precio0": 0,
+        "trabajo1": "Instalación Aire Frío/Calor 4500 Frigorías",
+        "precio1": 0,
+        "trabajo2": "Instalación Aire Frío/Calor 4500 Frigorías",
+        "precio2": 0,
+        "trabajo3": "Instalación Aire Frío/Calor 4500 Frigorías",
+        "precio3": 0,
+        "trabajo4": "Instalación Aire Frío/Calor 4500 Frigorías",
+        "precio4": 0,
+        "trabajo5": "Instalación Aire Frío/Calor 4500 Frigorías",
+        "precio5": 0,
+        "trabajo6": "Instalación Aire Frío/Calor 4500 Frigorías",
+        "precio6": 0,
+        "trabajo7": "Instalación Aire Frío/Calor 4500 Frigorías",
+        "precio7": 0,
+        "trabajo8": "Instalación Aire Frío/Calor 4500 Frigorías",
+        "precio8": 0,
+        "trabajo9": "Instalación Aire Frío/Calor 4500 Frigorías",
+        "precio9": 0,
+        "trabajo10": "Instalación Aire Frío/Calor 4500 Frigorías",
+        "precio10": 0,
+        "trabajo11": "Instalación Aire Frío/Calor 4500 Frigorías",
+        "precio11": 0
     }
 ]
