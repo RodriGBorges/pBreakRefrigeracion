@@ -8,11 +8,123 @@
     <main class="editar">
         <%- include('../partials/header') %>
         <section class="container">
-            <h1>Editar presupuesto N° <%= presupuesto.id %></h1>
-            <p>nombre del cliente: <%= presupuesto.nombreCliente %></p>
-            <% for( let i = 0; i < trabajosCliente.length; i++ ) { %>
-                <p><%= trabajosCliente[i].trabajo %></p>
-            <% } %>
+            <h1>Editar presupuesto</h1>
+            <div class="divContainer">
+                <form action="#" method="POST">
+                    <div class="divPClave">
+                        <label for="clave"><b>Clave:</b></label>
+                        <input type="text" name="clave" id="clave" placeholder="Palabra clave" value="<%= presupuesto.palabraClave == 0 ? "" : presupuesto.palabraClave %>">
+                    </div>
+                    <div class="divCliente">
+                        <h4>Datos del cliente</h4>
+                        <label for="">Nombre</label>
+                        <input type="text" name="nombre" value="<%= presupuesto.nombreCliente %>">
+                        <label for="">Dirección</label>
+                        <input type="text" name="direccion" value="<%= presupuesto.direccionCliente %>">
+                        <label for="">Teléfono</label>
+                        <input type="number" name="telefono" value="<%= presupuesto.telefonoCliente %>">
+                    </div>
+                    <div class="divPresupuesto">
+                        <h4>Datos del presupuesto</h4>
+                        <label for="">Garantía</label>
+                        <input type="number" name="garantia" value="<%= presupuesto.garantia %>">
+                        <label for="">Fecha del presupuesto</label>
+                        <input type="date" name="fechaPresupuesto" value="<%= presupuesto.fechaPresupuesto %>">
+                    </div>
+                    <h4 class="tituloTrabajo">Trabajos</h4>
+                    <div class="divTrabajos">
+                        <article>
+                            <input type="text" name="trabajo0" value="<%= trabajosCliente.trabajo0 %>">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio0" class="inputPrecio" value="<%= trabajosCliente.precio0 %>">
+                            </div>
+                        </article>
+                        <article>
+                            <input type="text" name="trabajo1" value="<%= trabajosCliente.trabajo1 ? trabajosCliente.trabajo1 : "" %>">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio1" class="inputPrecio" value="<%= trabajosCliente.precio1 ? trabajosCliente.precio1 : 0 %>">
+                            </div>
+                        </article>
+                        <article>
+                            <input type="text" name="trabajo2" value="<%= trabajosCliente.trabajo2 ? trabajosCliente.trabajo2 : "" %>">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio2" class="inputPrecio" value="<%= trabajosCliente.precio2 ? trabajosCliente.precio2 : 0 %>">
+                            </div>
+                        </article>
+                        <article>
+                            <input type="text" name="trabajo3" value="<%= trabajosCliente.trabajo3 ? trabajosCliente.trabajo3 : "" %>">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio3" class="inputPrecio" value="<%= trabajosCliente.precio3 ? trabajosCliente.precio3 : 0 %>">
+                            </div>
+                        </article>
+                        <article>
+                            <input type="text" name="trabajo4" value="<%= trabajosCliente.trabajo4 ? trabajosCliente.trabajo4 : "" %>">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio4" class="inputPrecio" value="<%= trabajosCliente.precio4 ? trabajosCliente.precio4 : 0 %>">
+                            </div>
+                        </article>
+                        <article>
+                            <input type="text" name="trabajo5" value="<%= trabajosCliente.trabajo5 ? trabajosCliente.trabajo5 : "" %>">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio5" class="inputPrecio" value="<%= trabajosCliente.precio5 ? trabajosCliente.precio5 : 0 %>">
+                            </div>
+                        </article>
+                        <article>
+                            <input type="text" name="trabajo6" value="<%= trabajosCliente.trabajo6 ? trabajosCliente.trabajo6 : "" %>">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio6" class="inputPrecio" value="<%= trabajosCliente.precio6 ? trabajosCliente.precio6 : 0 %>">
+                            </div>
+                        </article>
+                        <article>
+                            <input type="text" name="trabajo7" value="<%= trabajosCliente.trabajo7 ? trabajosCliente.trabajo7 : "" %>">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio7" class="inputPrecio" value="<%= trabajosCliente.precio7 ? trabajosCliente.precio7 : 0 %>">
+                            </div>
+                        </article>
+                        <article>
+                            <input type="text" name="trabajo8" value="<%= trabajosCliente.trabajo8 ? trabajosCliente.trabajo8 : "" %>">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio8" class="inputPrecio" value="<%= trabajosCliente.precio8 ? trabajosCliente.precio8 : 0 %>">
+                            </div>
+                        </article>
+                        <article>
+                            <input type="text" name="trabajo9" value="<%= trabajosCliente.trabajo9 ? trabajosCliente.trabajo9 : "" %>">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio9" class="inputPrecio" value="<%= trabajosCliente.precio9 ? trabajosCliente.precio9 : 0 %>">
+                            </div>
+                        </article>
+                        <article>
+                            <input type="text" name="trabajo10" value="<%= trabajosCliente.trabajo10 ? trabajosCliente.trabajo10 : "" %>">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio10" class="inputPrecio" value="<%= trabajosCliente.precio10 ? trabajosCliente.precio10 : 0 %>">
+                            </div>
+                        </article>
+                        <article>
+                            <input type="text" name="trabajo11" value="<%= trabajosCliente.trabajo11 ? trabajosCliente.trabajo11 : "" %>">
+                            <div>
+                                <label for="precio"><b>$:</b></label>
+                                <input type="number" name="precio11" class="inputPrecio" value="<%= trabajosCliente.precio11 ? trabajosCliente.precio11 : 0 %>">
+                            </div>
+                        </article>
+                    </div>
+                    <h4 class="descripcion">Texto adicional</h4>
+                    <div class="divDescripcion">
+                        <textarea name="descripcion"><%= presupuesto.descripcion == 0 ? "" : presupuesto.descripcion %></textarea>
+                    </div>
+                    <button type="submit" class="bttnCrear">Guardar</button>
+                </form>
+            </div>
         </section>
     </main>
     <%- include('../partials/footer') %>
