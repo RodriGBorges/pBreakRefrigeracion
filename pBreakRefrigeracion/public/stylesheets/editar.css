@@ -1,0 +1,230 @@
+.editar section.container h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.editar section.container div.divContainer {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    border: 1px solid var(--negro);
+    background-color: var(--fondo2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.editar section.container div.divContainer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editar section.container div.divContainer form div.divPClave {
+    width: 100%;
+    background-color: var(--celeste);
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid var(--negro);
+}
+
+.editar section.container div.divContainer form div.divPClave input {
+    padding: 5px;
+    height: 25px;
+}
+
+.editar section.container div.divContainer form div.divPClave input:focus {
+    outline: none;
+    border: 2px solid var(--celeste);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: all .2s;
+}
+
+.editar section.container div.divContainer form div.divCliente {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editar section.container div.divContainer form div.divCliente h4 {
+    margin: 15px 0 10px 0;
+}
+
+.editar section.container div.divContainer form div.divCliente input {
+    padding: 5px;
+    height: 25px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.editar section.container div.divContainer form div.divCliente input:focus {
+    outline: none;
+    border: 2px solid var(--celeste);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: all .2s;
+}
+
+.editar section.container div.divContainer form div.divPresupuesto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editar section.container div.divContainer form div.divPresupuesto h4 {
+    margin: 15px 0 10px 0;
+}
+
+.editar section.container div.divContainer form div.divPresupuesto input {
+    padding: 5px;
+    height: 25px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.editar section.container div.divContainer form div.divPresupuesto input:focus {
+    outline: none;
+    border: 2px solid var(--celeste);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: all .2s;
+}
+
+.editar section.container div.divContainer form h4.tituloTrabajo {
+    background-color: var(--celeste);
+    width: 100%;
+    margin: 10px 0 15px 0;
+    text-align: center;
+    border-top: 1px solid var(--negro);
+    border-bottom: 1px solid var(--negro);
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.editar section.container div.divContainer form div.divTrabajos {
+    display: flex;
+    flex-direction: column;
+}
+
+.editar section.container div.divContainer form div.divTrabajos article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.editar section.container div.divContainer form div.divTrabajos article input {
+    padding: 5px;
+    height: 25px;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.editar section.container div.divContainer form div.divTrabajos article input:focus {
+    outline: none;
+    border: 2px solid var(--celeste);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: all .2s;
+}
+
+.editar section.container div.divContainer form div.divTrabajos article div input.inputPrecio {
+    width: 150px;
+}
+
+.editar section.container div.divContainer form div.divTrabajos article.artBttn {
+    display: block;
+    padding: 0px;
+    margin: 0 auto 15px auto;
+}
+
+.editar section.container div.divContainer form div.divTrabajos article.artBttn button {
+    background-color: var(--celeste);
+    padding: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    width: 150px;
+    cursor: pointer;
+}
+
+.editar section.container div.divContainer form article.artBttn {
+    margin: 15px 0;
+}
+
+.editar section.container div.divContainer form article.artBttn button.bttnVerDescripcion {
+    font-weight: 600;
+    padding: 5px;
+    border: none;
+    background-color: var(--celeste);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 150px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* ------------------------- ocultar si.. */
+.editar section.container div.divContainer form h4.descripcion {
+    width: 100%;
+    background-color: var(--celesteClaro);
+    padding: 5px;
+    text-align: center;
+    border-top: 1px solid var(--negro);
+    border-bottom: 1px solid var(--negro);
+    margin-bottom: 10px;
+}
+
+.editar section.container div.divContainer form div.divDescripcion {
+    margin-bottom: 20px;
+}
+
+.editar section.container div.divContainer form div.divDescripcion textarea {
+    padding: 5px;
+    border: 1px solid var(--negro);
+    width: 250px;
+    height: 100px;
+}
+
+.editar section.container div.divContainer form div.divDescripcion textarea:focus {
+    outline: none;
+    border: 2px solid var(--celeste);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: all .2s;
+}
+
+/* ----------------------- */
+
+.editar section.container div.divContainer form button.bttnCrear {
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: var(--celeste);
+    padding: 5px;
+    font-weight: 600;
+    width: 200px;
+    cursor: pointer;
+}
+
+@media (min-width: 600px) {
+
+    .editar section.container div.divContainer {
+        max-width: 600px;
+    }
+
+    .editar section.container div.divContainer form div.divPClave input {
+        margin-left: 10px;
+        width: 250px;
+    }
+
+    .editar section.container div.divContainer form div.divTrabajos article, .editar section.container div.divContainer form div.divTrabajos article.mostrarTrabajos {
+        flex-direction: row;
+    }
+
+    .editar section.container div.divContainer form div.divTrabajos article.artBttn button, .editar section.container div.divContainer form article.artBttn button.bttnVerDescripcion, .editar section.container div.divContainer form button.bttnCrear {
+        box-shadow: none;
+    }
+
+    .editar section.container div.divContainer form div.divTrabajos article.artBttn button:hover, .editar section.container div.divContainer form article.artBttn button.bttnVerDescripcion:hover, .editar section.container div.divContainer form button.bttnCrear:hover {
+        color: var(--fondo2);
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        transition: all .2s;
+    }
+
+    .editar section.container div.divContainer form div.divTrabajos article div {
+        margin-left: 15px;
+    }
+}
