@@ -100,8 +100,48 @@
     width: 28px;
 }
 
-.headerNav section.hSectionGeneral div div.navDivMobile div {
+.headerNav section.hSectionGeneral div div.navDivMobile aside {
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
     display: none;
+    justify-content: flex-end;
+    transition: all .5s ease;
+}
+
+.headerNav section.hSectionGeneral div div.navDivMobile aside div {
+    background-color: var(--celeste);
+    z-index: 15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerNav section.hSectionGeneral div div.navDivMobile aside div button.bttnClose {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 5px;
+    height: 30px;
+    width: 80%;
+    margin-top: 70px;
+}
+
+.headerNav section.hSectionGeneral div div.navDivMobile aside div ul {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.headerNav section.hSectionGeneral div div.navDivMobile aside div ul li {
+    padding: 10px;
+}
+
+.headerNav section.hSectionGeneral div div.navDivMobile aside div ul li a {
+    color: var(--negro);
 }
 
 .headerNav section.hSectionGeneral div div.navDiv {
