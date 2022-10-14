@@ -6,14 +6,18 @@ window.addEventListener('load', () => {
     }
 
     const menuBurger = qs('#bttnBurger');
-    const aside = qs('#aside');
-    const bttnClose = qs('#bttnClose');
+    const nav = qs('#navMobile');
+    const bttnClose = qs('#bttnBurgerClose');
 
     menuBurger.addEventListener('click', () => {
-        aside.style.display = 'flex';
+        nav.style.display = 'flex';
+        menuBurger.style.display = 'none';
+        bttnClose.style.display = 'block';
     })
 
     bttnClose.addEventListener('click', () => {
-        aside.style.display = 'none';
+        nav.style.display = 'none';
+        bttnClose.style.display = 'none';
+        menuBurger.style.display = 'block';
     })
 })

@@ -100,27 +100,33 @@
     width: 28px;
 }
 
-.headerNav section.hSectionGeneral div div.navDivMobile aside {
-    background-color: rgba(0, 0, 0, .8);
-    width: 100%;
-    height: 100%;
+.headerNav section.hSectionGeneral div div.navDivMobile button.bttnClose {
+    display: none;
+}
+
+.headerNav section.hSectionGeneral div div.navDivMobile nav {
+    background-color: var(--fondo2);
+    border: 1px solid var(--celeste);
+    width: 150px;
+    height: 100px;
     position: absolute;
-    top: 0;
+    top: 135.5px;
     right: 0;
     display: none;
     justify-content: flex-end;
-    transition: all .5s ease;
+    z-index: 2;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-.headerNav section.hSectionGeneral div div.navDivMobile aside div {
-    background-color: var(--celeste);
-    z-index: 15;
+.headerNav section.hSectionGeneral div div.navDivMobile nav div {
+    background-color: var(--fondo2);
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.headerNav section.hSectionGeneral div div.navDivMobile aside div button.bttnClose {
+.headerNav section.hSectionGeneral div div.navDivMobile nav div button.bttnClose {
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     border: none;
     padding: 5px;
@@ -129,18 +135,18 @@
     margin-top: 70px;
 }
 
-.headerNav section.hSectionGeneral div div.navDivMobile aside div ul {
+.headerNav section.hSectionGeneral div div.navDivMobile nav div ul {
     height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.headerNav section.hSectionGeneral div div.navDivMobile aside div ul li {
+.headerNav section.hSectionGeneral div div.navDivMobile nav div ul li {
     padding: 10px;
 }
 
-.headerNav section.hSectionGeneral div div.navDivMobile aside div ul li a {
+.headerNav section.hSectionGeneral div div.navDivMobile nav div ul li a {
     color: var(--negro);
 }
 
@@ -156,6 +162,13 @@
 
 .headerNav section.hSectionGeneral article small {
     padding-bottom: 5px;
+}
+
+@media (min-width: 467px) {
+
+    .headerNav section.hSectionGeneral div div.navDivMobile nav {
+        top: 121.5px;
+    }
 }
 
 @media (min-width: 768px) {
