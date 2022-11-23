@@ -9,20 +9,20 @@
       <%- include('./partials/header') %> 
       <section class="sectionPresupuestos">
         <div class="divPresupuestos">
-          <%  clientes.forEach(cliente => { %> 
+          <%  presupuestos.forEach(presupuesto => { %> 
             <article class="tarjetaP">
               <div class="idFechaBox">
-                <p><%= cliente.id %></p>
-                <p><%= cliente.fechaPresupuesto %></p>
+                <p><%= presupuesto.id %></p>
+                <p><%= presupuesto.fechaPresupuesto %></p>
               </div>
               <div class="infoP">
-                <p><b>Cliente:</b> <%= cliente.nombreCliente %></p>
-                <p><b>Teléfono:</b> <%= cliente.telefonoCliente %></p>
-                <p><b>Clave:</b> <%= cliente.palabraClave %></p>
-                <a href="/presupuesto/<%= cliente.id %>">Ver</a>
+                <p><b>Cliente:</b> <%= presupuesto.nombreCliente %></p>
+                <p><b>Teléfono:</b> <%= presupuesto.telefonoCliente %></p>
+                <p><b>Clave:</b> <%= presupuesto.palabraClave %></p>
+                <a href="/presupuesto/<%= presupuesto.id %>">Ver</a>
               </div>
               <div class="precio">
-                <p>$ <%= cliente.precioTrabajoTotal %></p>
+                <p>$ <%= presupuesto.precioTrabajoTotal %></p>
               </div>
             </article>
           <% }) %> 
