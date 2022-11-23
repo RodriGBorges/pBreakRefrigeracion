@@ -214,6 +214,21 @@
     cursor: pointer;
 }
 
+.editar section.container div.divContainer form.formEliminar {
+    margin: 10px 0px;
+}
+
+.editar section.container div.divContainer form.formEliminar button.bttnEliminar {
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: crimson;
+    padding: 5px;
+    font-weight: 600;
+    width: 200px;
+    cursor: pointer;
+}
+
 @media (min-width: 600px) {
 
     .editar section.container div.divContainer {
@@ -229,7 +244,7 @@
         flex-direction: row;
     }
 
-    .editar section.container div.divContainer form div.divTrabajos article.artBttn button, .editar section.container div.divContainer form article.artBttn button.bttnVerDescripcion, .editar section.container div.divContainer form button.bttnCrear {
+    .editar section.container div.divContainer form div.divTrabajos article.artBttn button, .editar section.container div.divContainer form article.artBttn button.bttnVerDescripcion, .editar section.container div.divContainer form button.bttnCrear, .editar section.container div.divContainer form.formEliminar button.bttnEliminar {
         box-shadow: none;
     }
 
@@ -241,5 +256,11 @@
 
     .editar section.container div.divContainer form div.divTrabajos article div {
         margin-left: 15px;
+    }
+
+    .editar section.container div.divContainer form.formEliminar button.bttnEliminar:hover {
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        color: var(--fondo2);
+        transition: all .2s;
     }
 }

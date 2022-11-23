@@ -118,5 +118,12 @@ module.exports = {
 
         res.redirect(`/presupuesto/${req.params.id}`);
 
+    },
+    eliminarPresupuesto: (req, res) => {
+        presupuestos = presupuestos.filter(e => e.id !== parseInt(req.params.id));
+
+        fs.writeFileSync(presupuestosDestino, JSON.stringify(presupuestos, null, 2));
+
+		res.redirect("/");
     }
 }
