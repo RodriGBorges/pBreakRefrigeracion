@@ -33,7 +33,7 @@
             </table>
             <article class="fechaGarantia">
                 <p><b>Fecha de presupuesto:</b> <%= presupuesto.fechaPresupuesto %></p>
-                <p><b>Garantía:</b> <%= presupuesto.garantia %> días</p>
+                <p><b>Garantía:</b> <%= presupuesto.garantia == 0 ? " - " : `${presupuesto.garantia} días`%> </p>
             </article>
             <table class="tablaTrabajos">
                 <thead class="encabezadoTrabajos">
@@ -45,119 +45,119 @@
                 <tbody class="cuerpoTrabajos">
                     <tr>
                         <td class="trabajos">
-                            <%= trabajosCliente.trabajo0 %>
+                            <%= presupuesto.trabajo0 %>
                         </td>
                         <td class="precio">
-                            <%= trabajosCliente.precio0 %>
+                            <%= presupuesto.precio0 %>
                         </td>
                     </tr>
-                    <% if (trabajosCliente.trabajo1) { %>
+                    <% if (presupuesto.trabajo1) { %>
                         <tr>
                             <td class="trabajos">
-                                <%= trabajosCliente.trabajo1 %>
+                                <%= presupuesto.trabajo1 %>
                             </td>
                             <td class="precio">
-                                <%= trabajosCliente.precio1 %>
+                                <%= presupuesto.precio1 %>
                             </td>
                         </tr>
                     <% } %>
-                    <% if (trabajosCliente.trabajo2) { %>
+                    <% if (presupuesto.trabajo2) { %>
                         <tr>
                             <td class="trabajos">
-                                <%= trabajosCliente.trabajo2 %>
+                                <%= presupuesto.trabajo2 %>
                             </td>
                             <td class="precio">
-                                <%= trabajosCliente.precio2 %>
+                                <%= presupuesto.precio2 %>
                             </td>
                         </tr>
                     <% } %>
-                    <% if (trabajosCliente.trabajo3) { %>
+                    <% if (presupuesto.trabajo3) { %>
                         <tr>
                             <td class="trabajos">
-                                <%= trabajosCliente.trabajo3 %>
+                                <%= presupuesto.trabajo3 %>
                             </td>
                             <td class="precio">
-                                <%= trabajosCliente.precio3 %>
+                                <%= presupuesto.precio3 %>
                             </td>
                         </tr>
                     <% } %>
-                    <% if (trabajosCliente.trabajo4) { %>
+                    <% if (presupuesto.trabajo4) { %>
                         <tr>
                             <td class="trabajos">
-                                <%= trabajosCliente.trabajo4 %>
+                                <%= presupuesto.trabajo4 %>
                             </td>
                             <td class="precio">
-                                <%= trabajosCliente.precio4 %>
+                                <%= presupuesto.precio4 %>
                             </td>
                         </tr>
                     <% } %>
-                    <% if (trabajosCliente.trabajo5) { %>
+                    <% if (presupuesto.trabajo5) { %>
                         <tr>
                             <td class="trabajos">
-                                <%= trabajosCliente.trabajo5 %>
+                                <%= presupuesto.trabajo5 %>
                             </td>
                             <td class="precio">
-                                <%= trabajosCliente.precio5 %>
+                                <%= presupuesto.precio5 %>
                             </td>
                         </tr>
                     <% } %>
-                    <% if (trabajosCliente.trabajo6) { %>
+                    <% if (presupuesto.trabajo6) { %>
                         <tr>
                             <td class="trabajos">
-                                <%= trabajosCliente.trabajo6 %>
+                                <%= presupuesto.trabajo6 %>
                             </td>
                             <td class="precio">
-                                <%= trabajosCliente.precio6 %>
+                                <%= presupuesto.precio6 %>
                             </td>
                         </tr>
                     <% } %>
-                    <% if (trabajosCliente.trabajo7) { %>
+                    <% if (presupuesto.trabajo7) { %>
                         <tr>
                             <td class="trabajos">
-                                <%= trabajosCliente.trabajo7 %>
+                                <%= presupuesto.trabajo7 %>
                             </td>
                             <td class="precio">
-                                <%= trabajosCliente.precio7 %>
+                                <%= presupuesto.precio7 %>
                             </td>
                         </tr>
                     <% } %>
-                    <% if (trabajosCliente.trabajo8) { %>
+                    <% if (presupuesto.trabajo8) { %>
                         <tr>
                             <td class="trabajos">
-                                <%= trabajosCliente.trabajo8 %>
+                                <%= presupuesto.trabajo8 %>
                             </td>
                             <td class="precio">
-                                <%= trabajosCliente.precio8 %>
+                                <%= presupuesto.precio8 %>
                             </td>
                         </tr>
                     <% } %>
-                    <% if (trabajosCliente.trabajo9) { %>
+                    <% if (presupuesto.trabajo9) { %>
                         <tr>
                             <td class="trabajos">
-                                <%= trabajosCliente.trabajo9 %>
+                                <%= presupuesto.trabajo9 %>
                             </td>
                             <td class="precio">
-                                <%= trabajosCliente.precio9 %>
+                                <%= presupuesto.precio9 %>
                             </td>
                         </tr>
                     <% } %>
-                    <% if (trabajosCliente.trabajo10) { %>
+                    <% if (presupuesto.trabajo10) { %>
                         <tr>
                             <td class="trabajos">
-                                <%= trabajosCliente.trabajo10 %>
+                                <%= presupuesto.trabajo10 %>
                             </td>
                             <td class="precio">
-                                <%= trabajosCliente.precio10 %>
+                                <%= presupuesto.precio10 %>
                             </td>
                         </tr>
                     <% } %>
-                    <% if (trabajosCliente.trabajo11) { %>
+                    <% if (presupuesto.trabajo11) { %>
                         <tr>
                             <td class="trabajos">
-                                <%= trabajosCliente.trabajo11 %>
+                                <%= presupuesto.trabajo11 %>
                             </td>
                             <td class="precio">
-                                <%= trabajosCliente.precio11 %>
+                                <%= presupuesto.precio11 %>
                             </td>
                         </tr>
                     <% } %>
@@ -165,7 +165,7 @@
             </table>
             <article class="artTotal">
                 <p>Total:</p>
-                <p>$ <%= presupuesto.precioTrabajoTotal %></p>
+                <p>$ <%= toThousand(presupuesto.precioTrabajoTotal) %></p>
             </article>
             <% if (presupuesto.descripcion != 0) { %>
                 <article class="descripcion">
