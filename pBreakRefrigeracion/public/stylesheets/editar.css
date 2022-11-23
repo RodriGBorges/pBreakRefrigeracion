@@ -85,6 +85,21 @@
     transition: all .2s;
 }
 
+.editar section.container div.divContainer form div.divPresupuesto div.actualizarFecha {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.editar section.container div.divContainer form div.divPresupuesto div.actualizarFecha input {
+    width: 25px;
+    margin-bottom: 0px;
+}
+
+.editar section.container div.divContainer form div.divPresupuesto div.actualizarFecha label {
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
 .editar section.container div.divContainer form h4.tituloTrabajo {
     background-color: var(--celeste);
     width: 100%;

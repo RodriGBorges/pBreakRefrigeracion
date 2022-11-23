@@ -10,7 +10,7 @@
         <section class="container">
             <h1>Editar presupuesto N° <%= presupuesto.id %></h1>
             <div class="divContainer">
-                <form action="#" method="POST">
+                <form action="/admin/editar/<%= presupuesto.id %>?_method=PUT" method="POST">
                     <div class="divPClave">
                         <label for="clave"><b>Clave:</b></label>
                         <input type="text" name="clave" id="clave" placeholder="Palabra clave" value="<%= presupuesto.palabraClave == 0 ? "" : presupuesto.palabraClave %>">
@@ -28,7 +28,7 @@
                         <h4>Datos del presupuesto</h4>
                         <label for="fecha">Fecha del presupuesto</label>
                         <input type="text" name="fechaPresupuesto" disabled id="fecha" value="<%= presupuesto.fechaPresupuesto %>">
-                        <div>
+                        <div class="actualizarFecha">
                             <input type="checkbox" name="actualizarFecha" id="fechaActual">
                             <label for="fechaActual">Actualizar fecha</label>
                         </div>
