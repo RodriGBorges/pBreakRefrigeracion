@@ -1,8 +1,9 @@
 const router = require('express').Router();
-const { login } = require('../controllers/userController');
+const { vistaLogin, login } = require('../controllers/userController');
 
 
 /* ruta login */
-router.get('/login', login);
+router.get('/login', vistaLogin);
+router.post('/login', login);
 
 module.exports = router;

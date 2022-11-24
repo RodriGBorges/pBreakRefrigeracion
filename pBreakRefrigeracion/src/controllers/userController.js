@@ -1,7 +1,13 @@
+const bcrypt = require('bcryptjs');
+let usuarios = require('../data/usuarios.json');
+
 module.exports = {
 
-    login: (req, res) => {
+    vistaLogin: (req, res) => {
         res.render('user/login');
+    },
+    login: (req, res) => {
+        
     }
 
 }
