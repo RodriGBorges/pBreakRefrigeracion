@@ -12,16 +12,31 @@
                 <h1>Iniciar sesión</h1>
                 <form action="/user/login" method="POST">
                     <div class="divDatos">
-                        <input type="text" name="usuario" class="inputUser" placeholder="Usuario" required>
-                        <input type="password" name="contraseña" class="inputUser" placeholder="Contraseña" required>
-                        <i class="ojitoAct fas fa-eye-slash" id="ocultarContraseña"></i>
-                        <i class="ojitoDes fas fa-eye" id="verContraseña"></i>
+                        <input type="text" name="usuario" class="inputUser" placeholder="Usuario" 
+                        <% if (locals.oldData && locals.oldData.usuario) { %>
+                            value="<%= locals.oldData.usuario %>"
+                        <% } %>
+                        >
+                        <% if (locals.errors && errors.usuario) { %>
+                            <small class="errors"><%= errors.usuario.msg %></small>
+                        <% } %>
+                        <div class="divContraseña">
+                            <input type="password" name="contraseña" class="inputUser" placeholder="Contraseña" >
+                            <i class="ojitoAct fas fa-eye-slash" id="ocultarContraseña"></i>
+                            <i class="ojitoDes fas fa-eye" id="verContraseña"></i>
+                        </div>
+                        <% if (locals.errors && errors.contraseña) { %>
+                            <small class="errors"><%= errors.contraseña.msg %></small>
+                        <% } %>
+                        
                     </div>
                     <div class="divRecordarme">
                         <input type="checkbox" id="recordarme" name="recordarme" value="recordarme">
                         <label for="recordarme">Recordarme</label>
                     </div>
-                    <small class="error"></small>
+                    <% if (locals.errorLogin) { %>
+                        <small class="errors"><%= errorLogin %></small>
+                    <% } %>
                     <button type="submit">Ingresar</button>
                 </form>
             </div>
