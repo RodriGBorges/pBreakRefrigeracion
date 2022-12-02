@@ -24,7 +24,6 @@
 }
 
 .login section.container div.divContainer form div.divDatos {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,14 +45,18 @@
     transition: all .2s;
 }
 
-.login section.container div.divContainer form div.divDatos i {
+.login section.container div.divContainer form div.divDatos div.divContraseña {
+    position: relative;
+}
+
+.login section.container div.divContainer form div.divDatos div.divContraseña i {
     position: absolute;
-    right: 35px;
-    bottom:22px;
+    right: 10px;
+    bottom: 22px;
     cursor: pointer;
 }
 
-.login section.container div.divContainer form div.divDatos i.ojitoDes {
+.login section.container div.divContainer form div.divDatos div.divContraseña i.ojitoDes {
     display: none;
 }
 
@@ -71,8 +74,9 @@
     border-color: var(--celeste);
 }
 
-.login section.container div.divContainer form small.error {
+.login section.container div.divContainer form small.errors {
     color: red;
+    margin-bottom: 10px;
 }
 
 .login section.container div.divContainer form button {
