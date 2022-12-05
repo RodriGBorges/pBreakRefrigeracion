@@ -1,6 +1,10 @@
 const fs = require('fs');
-const moment = require('moment/moment');
 const path = require('path');
+
+const dayjs = require('dayjs');
+dayjs.extend(require('dayjs/plugin/timezone'));
+dayjs.extend(require('dayjs/plugin/utc'));
+dayjs.tz.setDefault("America/Argentina/Buenos_Aires");
 
 let presupuestos = require('../data/presupuestos.json');
 const presupuestosDestino = path.join(__dirname, '../data/presupuestos.json');
@@ -30,7 +34,7 @@ module.exports = {
 
         nuevoPresupuesto.id = presupuestos.length + 1;
         nuevoPresupuesto.palabraClave = clave == "" ? 0 : clave;
-        nuevoPresupuesto.fechaPresupuesto = moment().format('DD/MM/YYYY, H:mm a');
+        nuevoPresupuesto.fechaPresupuesto = dayjs.tz().format('DD/MM/YYYY');
         nuevoPresupuesto.nombreCliente = nombre;
         nuevoPresupuesto.direccionCliente = direccion;
         nuevoPresupuesto.telefonoCliente = telefono;
@@ -80,7 +84,7 @@ module.exports = {
             }
         })
 
-        actualizarFecha == "on" ? presupuestoEditado.fechaPresupuesto = moment().format('DD/MM/YYYY, H:mm a') : null;
+        actualizarFecha == "on" ? presupuestoEditado.fechaPresupuesto = dayjs.tz().format('DD/MM/YYYY') : null;
 
         presupuestoEditado.palabraClave = clave == "" ? 0 : clave;
         presupuestoEditado.nombreCliente = nombre;
