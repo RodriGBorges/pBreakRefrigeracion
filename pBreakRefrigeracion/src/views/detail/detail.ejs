@@ -10,7 +10,7 @@
         <section class="sectionD">
             <article class="fechaId">
                 <p><%= presupuesto.fechaPresupuesto  %></p>
-                <p>Presupuesto N° <%= presupuesto.id  %></p>
+                <p>Presupuesto N° <%= presupuesto.nPresupuesto  %></p>
                 <a href="/admin/editar/<%= presupuesto.id %>"><i class="fas fa-wrench"></i></a>
             </article>
             <table class="tablaInfo">
@@ -257,9 +257,9 @@
                     <p><%= presupuesto.descripcion %></p>
                 </article>
             <% } %>
-            <% if (presupuesto.palabraClave != 0) { %>
+            <% if (presupuesto.clave != 0) { %>
                 <article class="palabraClave">
-                    <h4><b>Palabra clave:</b> <%= presupuesto.palabraClave %></h4>
+                    <h4><b>Palabra clave:</b> <%= presupuesto.clave %></h4>
                 </article>
             <% } %>
         </section>
