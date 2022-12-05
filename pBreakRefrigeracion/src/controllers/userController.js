@@ -26,6 +26,12 @@ module.exports = {
         } else {
             res.render('user/login', { errors: loginErrors.mapped(), oldData: req.body });
         }
+    },
+    cerrarSesion: (req, res) => {
+        res.clearCookie('recordarUsuario');
+        req.session.destroy();
+
+        res.redirect('/user/login');
     }
 
 }
