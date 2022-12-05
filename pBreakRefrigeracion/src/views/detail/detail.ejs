@@ -4,7 +4,7 @@
     <title>Presupuesto N° <%= presupuesto.id %></title>
     <%- include('../partials/head') %>
 </head>
-<body>
+<body onload="document.body.style.visibility=`visible`;">
     <main class="detail">
         <%- include('../partials/header') %>
         <section class="sectionD">
@@ -266,5 +266,6 @@
     </main>
     <%- include('../partials/footer') %>
 </body>
+<script>document.body.style.visibility=`hidden`;</script>
 <script src="../../../javascripts/general.js"></script>
 </html>

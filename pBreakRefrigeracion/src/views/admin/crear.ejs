@@ -4,7 +4,7 @@
     <title>Crear presupuesto</title>
     <%- include('../partials/head') %>
 </head>
-<body>
+<body onload="document.body.style.visibility=`visible`;">
     <main class="crear">
         <%- include('../partials/header') %>
         <section class="container">
@@ -89,5 +89,7 @@
     </main>
     <%- include('../partials/footer') %>
 </body>
+<script>document.body.style.visibility=`hidden`;</script>
 <script src="../../../javascripts/general.js"></script>
+<script src="../../../javascripts/vistaCrear.js"></script>
 </html>

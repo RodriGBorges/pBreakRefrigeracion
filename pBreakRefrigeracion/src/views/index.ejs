@@ -4,7 +4,7 @@
     <title>Presupuestos BreakR</title>
     <%- include('./partials/head') %> 
   </head>
-  <body>
+  <body onload="document.body.style.visibility=`visible`;">
     <main class="home">
       <%- include('./partials/header') %> 
       <section class="sectionPresupuestos">
@@ -31,5 +31,6 @@
     </main>
     <%- include('./partials/footer') %>
   </body>
+  <script>document.body.style.visibility=`hidden`;</script>
   <script src="../../javascripts/general.js"></script>
 </html>
