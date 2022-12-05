@@ -16,6 +16,7 @@ window.addEventListener('load', () => {
     const bttnMasTrabajos = qs('#masTrabajos');
     const bttnDescripcion = qs('#bttnDescripcion');
     const mostrarTrabajos = qsAll('.mostrarTrabajos');
+    const mostrarDescripcion = qsAll('.mostrarDivText');
     const titleDescripcion = qs('.descripcion');
     const divDescripcion = qs('.divDescripcion');
 
@@ -37,6 +38,7 @@ window.addEventListener('load', () => {
         e.preventDefault();
         for (let i = 0; i < mostrarTrabajos.length; i++) {
             mostrarTrabajos[i].style.display = 'flex';
+            mostrarDescripcion[i].style.display = 'block'
         }
         bttnMasTrabajos.style.display = 'none';
     })

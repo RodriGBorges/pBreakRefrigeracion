@@ -14,13 +14,18 @@
                     <div class="divPClave">
                         <label for="clave"><b>Clave:</b></label>
                         <input type="text" name="clave" id="clave" placeholder="Palabra clave">
+                        
                     </div>
                     <div class="divCliente">
                         <h4>Datos del cliente</h4>
                         <input type="text" name="nombre" placeholder="Nombre">
                         <input type="text" name="direccion" placeholder="Dirección">
                         <input type="number" name="telefono" placeholder="Teléfono">
-                        <input type="number" name="garantia" placeholder="Garantía">
+                    </div>
+                    <div class="divPresupuesto">
+                        <h4>Datos del presupuesto</h4>
+                        <input type="number" name="nPresupuesto" id="nPresupuesto" placeholder="N° Presupuesto">
+                        <input type="text" name="garantia" placeholder="Garantía">
                     </div>
                     <h4 class="tituloTrabajo">Trabajos</h4>
                     <div class="divTrabajos">
@@ -31,6 +36,9 @@
                                 <input type="number" name="precio0" class="inputPrecio" placeholder="Precio">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion0" placeholder="Descripción del trabajo"></textarea>
+                        </div>
                         <article>
                             <input type="text" name="trabajo1" placeholder="Trabajo realizado">
                             <div>
@@ -38,6 +46,9 @@
                                 <input type="number" name="precio1" class="inputPrecio" placeholder="Precio">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion1" placeholder="Descripción del trabajo"></textarea>
+                        </div>
                         <article>
                             <input type="text" name="trabajo2" placeholder="Trabajo realizado">
                             <div>
@@ -45,6 +56,9 @@
                                 <input type="number" name="precio2" class="inputPrecio" placeholder="Precio">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion2" placeholder="Descripción del trabajo"></textarea>
+                        </div>
                         <article class="artBttn">
                             <button class="bttnVerMasTrabajos" id="masTrabajos">Más</button>
                         </article>
@@ -56,6 +70,9 @@
                                     <input type="number" name="precio<%= i %>" class="inputPrecio" placeholder="Precio">
                                 </div>
                             </article>
+                            <div class="mostrarDivText" id="mostrarDivText">
+                                <textarea name="descripcion<%= i%>" placeholder="Descripción del trabajo"></textarea>
+                            </div>
                         <% } %>
                     </div>
                     <article class="artBttn">

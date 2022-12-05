@@ -33,7 +33,9 @@
                             <label for="fechaActual">Actualizar fecha</label>
                         </div>
                         <label for="garantia">Garantía</label>
-                        <input type="number" name="garantia" id="garantia" value="<%= presupuesto.garantia %>">
+                        <input type="text" name="garantia" id="garantia" value="<%= presupuesto.garantia %>">
+                        <label for="nPresupuesto">Número de presupuesto</label>
+                        <input type="number" name="nPresupuesto" id="nPresupuesto" value="<%= presupuesto.nPresupuesto %>">
                     </div>
                     <h4 class="tituloTrabajo">Trabajos</h4>
                     <div class="divTrabajos">
@@ -44,6 +46,9 @@
                                 <input type="number" name="precio0" class="inputPrecio" value="<%= presupuesto.precio0 %>">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion0" placeholder="Descripción del trabajo"><%= presupuesto.descripcion0 %></textarea>
+                        </div>
                         <article>
                             <input type="text" name="trabajo1" value="<%= presupuesto.trabajo1 ? presupuesto.trabajo1 : "" %>">
                             <div>
@@ -51,6 +56,9 @@
                                 <input type="number" name="precio1" class="inputPrecio" value="<%= presupuesto.precio1 ? presupuesto.precio1 : "" %>">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion1" placeholder="Descripción del trabajo"><%= presupuesto.descripcion1 %></textarea>
+                        </div>
                         <article>
                             <input type="text" name="trabajo2" value="<%= presupuesto.trabajo2 ? presupuesto.trabajo2 : "" %>">
                             <div>
@@ -58,6 +66,9 @@
                                 <input type="number" name="precio2" class="inputPrecio" value="<%= presupuesto.precio2 ? presupuesto.precio2 : "" %>">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion2" placeholder="Descripción del trabajo"><%= presupuesto.descripcion2 %></textarea>
+                        </div>
                         <article>
                             <input type="text" name="trabajo3" value="<%= presupuesto.trabajo3 ? presupuesto.trabajo3 : "" %>">
                             <div>
@@ -65,6 +76,9 @@
                                 <input type="number" name="precio3" class="inputPrecio" value="<%= presupuesto.precio3 ? presupuesto.precio3 : "" %>">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion3" placeholder="Descripción del trabajo"><%= presupuesto.descripcion3 %></textarea>
+                        </div>
                         <article>
                             <input type="text" name="trabajo4" value="<%= presupuesto.trabajo4 ? presupuesto.trabajo4 : "" %>">
                             <div>
@@ -72,6 +86,9 @@
                                 <input type="number" name="precio4" class="inputPrecio" value="<%= presupuesto.precio4 ? presupuesto.precio4 : "" %>">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion4" placeholder="Descripción del trabajo"><%= presupuesto.descripcion4 %></textarea>
+                        </div>
                         <article>
                             <input type="text" name="trabajo5" value="<%= presupuesto.trabajo5 ? presupuesto.trabajo5 : "" %>">
                             <div>
@@ -79,6 +96,9 @@
                                 <input type="number" name="precio5" class="inputPrecio" value="<%= presupuesto.precio5 ? presupuesto.precio5 : "" %>">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion5" placeholder="Descripción del trabajo"><%= presupuesto.descripcion5 %></textarea>
+                        </div>
                         <article>
                             <input type="text" name="trabajo6" value="<%= presupuesto.trabajo6 ? presupuesto.trabajo6 : "" %>">
                             <div>
@@ -86,6 +106,9 @@
                                 <input type="number" name="precio6" class="inputPrecio" value="<%= presupuesto.precio6 ? presupuesto.precio6 : "" %>">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion6" placeholder="Descripción del trabajo"><%= presupuesto.descripcion6 %></textarea>
+                        </div>
                         <article>
                             <input type="text" name="trabajo7" value="<%= presupuesto.trabajo7 ? presupuesto.trabajo7 : "" %>">
                             <div>
@@ -93,6 +116,9 @@
                                 <input type="number" name="precio7" class="inputPrecio" value="<%= presupuesto.precio7 ? presupuesto.precio7 : "" %>">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion7" placeholder="Descripción del trabajo"><%= presupuesto.descripcion7 %></textarea>
+                        </div>
                         <article>
                             <input type="text" name="trabajo8" value="<%= presupuesto.trabajo8 ? presupuesto.trabajo8 : "" %>">
                             <div>
@@ -100,6 +126,9 @@
                                 <input type="number" name="precio8" class="inputPrecio" value="<%= presupuesto.precio8 ? presupuesto.precio8 : "" %>">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion8" placeholder="Descripción del trabajo"><%= presupuesto.descripcion8 %></textarea>
+                        </div>
                         <article>
                             <input type="text" name="trabajo9" value="<%= presupuesto.trabajo9 ? presupuesto.trabajo9 : "" %>">
                             <div>
@@ -107,6 +136,9 @@
                                 <input type="number" name="precio9" class="inputPrecio" value="<%= presupuesto.precio9 ? presupuesto.precio9 : "" %>">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion9" placeholder="Descripción del trabajo"><%= presupuesto.descripcion9 %></textarea>
+                        </div>
                         <article>
                             <input type="text" name="trabajo10" value="<%= presupuesto.trabajo10 ? presupuesto.trabajo10 : "" %>">
                             <div>
@@ -114,6 +146,9 @@
                                 <input type="number" name="precio10" class="inputPrecio" value="<%= presupuesto.precio10 ? presupuesto.precio10 : "" %>">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion10" placeholder="Descripción del trabajo"><%= presupuesto.descripcion10 %></textarea>
+                        </div>
                         <article>
                             <input type="text" name="trabajo11" value="<%= presupuesto.trabajo11 ? presupuesto.trabajo11 : "" %>">
                             <div>
@@ -121,6 +156,9 @@
                                 <input type="number" name="precio11" class="inputPrecio" value="<%= presupuesto.precio11 ? presupuesto.precio11 : "" %>">
                             </div>
                         </article>
+                        <div class="divText">
+                            <textarea name="descripcion11" placeholder="Descripción del trabajo"><%= presupuesto.descripcion11 %></textarea>
+                        </div>
                     </div>
                     <h4 class="descripcion">Texto adicional</h4>
                     <div class="divDescripcion">
