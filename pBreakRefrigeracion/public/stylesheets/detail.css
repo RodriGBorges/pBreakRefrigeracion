@@ -153,6 +153,23 @@
     padding: 5px;
 }
 
+.detail div.divBttn {
+    margin: 15px auto;
+    width: 90%;
+    max-width: 920px;
+}
+
+.detail div.divBttn button {
+    margin-bottom: 10px;
+    border: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    background-color: #08D9D6;
+    padding: 5px;
+    font-weight: 600;
+    width: 200px;
+    cursor: pointer;
+}
+
 @media(min-width: 768px) {
 
     .detail section.sectionD {
@@ -163,4 +180,15 @@
         background-color: var(--fondo2);
         transition: all .2s;
     }
+
+    .detail div.divBttn button {
+        box-shadow: none;
+    }
+
+    .detail div.divBttn button:hover {
+        color: var(--fondo2);
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        transition: all .2s;
+    }
+
 }

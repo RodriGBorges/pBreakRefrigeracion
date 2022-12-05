@@ -2,15 +2,16 @@
 <html lang="es">
 <head>
     <title>Presupuesto N° <%= presupuesto.id %></title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
     <%- include('../partials/head') %>
 </head>
 <body onload="document.body.style.visibility=`visible`;">
-    <main class="detail">
+    <main class="detail" id="presupuestoPDF">
         <%- include('../partials/header') %>
         <section class="sectionD">
             <article class="fechaId">
                 <p><%= presupuesto.fechaPresupuesto  %></p>
-                <p>Presupuesto N° <%= presupuesto.nPresupuesto  %></p>
+                <p id="nPresupuestoId">Presupuesto Nro <%= presupuesto.nPresupuesto  %></p>
                 <a href="/admin/editar/<%= presupuesto.id %>"><i class="fas fa-wrench"></i></a>
             </article>
             <table class="tablaInfo">
@@ -21,7 +22,7 @@
                 </thead>
                 <tbody class="cuerpoInfo">
                     <tr>
-                        <td class="infoCliente"><b>Nombre:</b> <%= presupuesto.nombreCliente %></td>
+                        <td class="infoCliente" id="nombreClienteId"><b>Nombre:</b> <%= presupuesto.nombreCliente %></td>
                     </tr>
                     <tr>
                         <td class="infoCliente"><b>Dirección:</b> <%= presupuesto.direccionCliente %></td>
@@ -263,9 +264,13 @@
                 </article>
             <% } %>
         </section>
+        <div class="divBttn">
+            <button class="descargarBttn" id="bttnDescargar">Descargar   <i class="fas fa-file-download"></i></button>
+        </div>
     </main>
     <%- include('../partials/footer') %>
 </body>
 <script>document.body.style.visibility=`hidden`;</script>
 <script src="../../../javascripts/general.js"></script>
+<script src="../../../javascripts/descargarPDF.js"></script>
 </html>
