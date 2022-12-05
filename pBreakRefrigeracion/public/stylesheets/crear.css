@@ -37,24 +37,24 @@
     transition: all .2s;
 }
 
-.crear section.container div.divContainer form div.divCliente {
+.crear section.container div.divContainer form div.divCliente, .crear section.container div.divContainer form div.divPresupuesto {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.crear section.container div.divContainer form div.divCliente h4 {
+.crear section.container div.divContainer form div.divCliente h4, .crear section.container div.divContainer form div.divPresupuesto h4 {
     margin: 15px 0 10px 0;
 }
 
-.crear section.container div.divContainer form div.divCliente input {
+.crear section.container div.divContainer form div.divCliente input, .crear section.container div.divContainer form div.divPresupuesto input {
     padding: 5px;
     height: 25px;
     width: 250px;
     margin-bottom: 10px;
 }
 
-.crear section.container div.divContainer form div.divCliente input:focus {
+.crear section.container div.divContainer form div.divCliente input:focus, .crear section.container div.divContainer form div.divPresupuesto input:focus {
     outline: none;
     border: 2px solid var(--celeste);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -80,7 +80,6 @@
 .crear section.container div.divContainer form div.divTrabajos article {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
     padding: 5px;
 }
 
@@ -92,6 +91,29 @@
 }
 
 .crear section.container div.divContainer form div.divTrabajos article input:focus {
+    outline: none;
+    border: 2px solid var(--celeste);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: all .2s;
+}
+
+.crear section.container div.divContainer form div.divTrabajos div.divText,  .crear section.container div.divContainer form div.divTrabajos div.mostrarDivText {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--celesteClaro);
+    padding: 5px 5px 10px 5px;
+}
+
+.crear section.container div.divContainer form div.divTrabajos div.mostrarDivText:last-child {
+    border-bottom: none;
+}
+
+.crear section.container div.divContainer form div.divTrabajos div.divText textarea, .crear section.container div.divContainer form div.divTrabajos div.mostrarDivText textarea {
+    padding: 5px;
+    width: 250px;
+    height: 100px;
+}
+
+.crear section.container div.divContainer form div.divTrabajos div.divText textarea:focus, .crear section.container div.divContainer form div.divTrabajos div.mostrarDivText textarea:focus {
     outline: none;
     border: 2px solid var(--celeste);
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
@@ -119,6 +141,10 @@
 }
 /* ---------------------------- ocultar si.. */
 .crear section.container div.divContainer form div.divTrabajos article.mostrarTrabajos {
+    display: none;
+}
+
+.crear section.container div.divContainer form div.divTrabajos div.mostrarDivText {
     display: none;
 }
 /* ------------------ */
@@ -209,5 +235,17 @@
 
     .crear section.container div.divContainer form div.divTrabajos article div {
         margin-left: 15px;
+    }
+
+    .crear section.container div.divContainer form div.divTrabajos div.divText textarea, .crear section.container div.divContainer form div.divTrabajos div.mostrarDivText textarea {
+        width: 100%;
+    }
+
+    .crear section.container div.divContainer form div.divDescripcion {
+        width: 440px;
+    }
+
+    .crear section.container div.divContainer form div.divDescripcion textarea {
+        width: 100%;
     }
 }
