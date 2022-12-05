@@ -22,7 +22,7 @@
                 <a href="/presupuesto/<%= presupuesto.id %>">Ver</a>
               </div>
               <div class="precio">
-                <p>$ <%= presupuesto.precioTrabajoTotal %></p>
+                <p>$ <%= toThousand(presupuesto.precioTrabajoTotal) %></p>
               </div>
             </article>
           <% }) %> 
