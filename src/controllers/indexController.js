@@ -1,12 +1,15 @@
-const fs = require('fs');
-const path = require('path');
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-
-const presupuestosDestino = path.join(__dirname, '../data/presupuestos.json');
-let presupuestos = JSON.parse(fs.readFileSync(presupuestosDestino, "utf-8"));
+const db = require('../database/models');
 
 module.exports = {
     home: (req, res) => {
-        res.render('index', { presupuestos, toThousand });
+        db.Presupuesto.findAll()
+        .then(presupuestos => {
+            res.render('index', {presupuestos, toThousand})
+        })
+        .catch( error => {
+            res.send("Error al requerir presupuestos de la base de datos")
+            console.log(error);
+        })
     }
 }
