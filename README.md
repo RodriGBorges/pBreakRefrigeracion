@@ -34,6 +34,6 @@
 
 <br>
 <div align="center">
-  <h3>Detalle del presupuesto con botón para descargar como PDF</h3>
+  <h3>Ejemplo de presupuesto en formato PDF para enviar al cliente</h3>
   <img src="./Bocetos/Readme/breakr3.png" width="600"/>
 </div>
