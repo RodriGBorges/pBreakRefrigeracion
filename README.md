@@ -6,6 +6,13 @@
   <img align="start" src="./Diseño/Logo/BreakRefrigeracion.png" />
 </div>
 
+##
+
+<br>
+<div align="center">
+  <h3>Vista login</h3>
+  <img src="./Bocetos/Readme/breakr4.png" width="600"/>
+</div>
 
 ##
 
@@ -28,5 +35,5 @@
 <br>
 <div align="center">
   <h3>Detalle del presupuesto con botón para descargar como PDF</h3>
-  <img src=""/>
+  <img src="./Bocetos/Readme/breakr3.png" width="600"/>
 </div>
