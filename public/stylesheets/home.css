@@ -1,3 +1,24 @@
+.home h1.tituloBusqueda {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.home div.parametrosBusqueda {
+    margin: 10px;
+}
+
+.home div.parametrosBusqueda p {
+    margin-bottom: 5px;
+}
+
+.home div.parametrosBusqueda ul {
+    margin-left: 10px;
+}
+
+.home div.parametrosBusqueda ul li {
+    list-style: disc;
+}
+
 .home section.sectionPresupuestos {
     margin: 15px 0;
 }

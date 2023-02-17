@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resultados con "<%= busqueda %>"</title>
+    <%- include('./partials/head') %> 
+  </head>
+  <body onload="document.body.style.visibility=`visible`;">
+    <main class="home">
+      <%- include('./partials/header') %> 
+      <section class="sectionPresupuestos">
+        <% if (result.length > 0) { %>
+        <h1 class="tituloBusqueda">Resultados con "<%= busqueda %>"</h1>
+        <div class="divPresupuestos">
+            <%  result.forEach(presupuesto => { %> 
+                <article class="tarjetaP">
+                    <div class="idFechaBox">
+                        <p><%= presupuesto.id %></p>
+                        <p><%= presupuesto.fechaPresupuesto %></p>
+                    </div>
+                    <div class="infoP">
+                        <p><b>Cliente:</b> <%= presupuesto.nombreCliente %></p>
+                        <p><b>Teléfono:</b> <%= presupuesto.telefonoCliente %></p>
+                        <p><b>Clave:</b> <%= presupuesto.palabraClave %></p>
+                        <a href="/presupuesto/<%= presupuesto.id %>">Ver</a>
+                    </div>
+                    <div class="precio">
+                        <p>$ <%= toThousand(presupuesto.precioTrabajoTotal) %></p>
+                    </div>
+                </article>
+            <% }) %> 
+        </div>
+        <% } else { %>
+                <div class="parametrosBusqueda">
+                    <h1 class="tituloBusqueda">No se encontró ningún presupuesto que coincida con tu búsqueda</h1>
+                    <p>Datos a tener en cuenta para una búsqueda exitosa: </p>
+                    <ul>
+                        <li>Nombre del cliente</li>
+                        <li>Teléfono del cliente</li>
+                        <li>Fecha del presupuesto</li>
+                        <li>El id original del presupuesto</li>
+                        <li>Texto adicional</li>
+                        <li>Palabra clave</li>
+                    </ul>
+                </div>
+            <% } %>
+      </section>
+    </main>
+    <%- include('./partials/footer') %>
+  </body>
+  <script>document.body.style.visibility=`hidden`;</script>
+  <script src="../../javascripts/general.js"></script>
+</html>
