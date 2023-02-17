@@ -35,15 +35,24 @@
                 <nav id="navMobile">
                     <div>
                         <ul>
-                            <li><a href="/admin/crear">Crear presupuesto</a></li>
-                            <li><a href="/user/cerrarSesion">Cerrar sesión</a></li>
+                            <% if (locals.adminLogueado) { %>
+                                <li><a href="/admin/crear">Crear presupuesto</a></li>
+                                <li><a href="/user/cerrarSesion">Cerrar sesión</a></li>
+                            <% } else { %>
+                                <li class="sesionError">Se requiere inicio de sesión</li>
+                            <% } %>
                         </ul>
                     </div>
                 </nav>
             </div>
             <div class="navDiv">
-                <p><a href="/admin/crear">Crear presupuesto</a></p>
-                <p><a href="/user/cerrarSesion">Cerrar sesión</a></p>
+                <% if (locals.adminLogueado) { %>
+                    <p><a href="/admin/crear">Crear presupuesto</a></p>
+                    <p><a href="/user/cerrarSesion">Cerrar sesión</a></p>
+                
+                <% } else { %>
+                    <p class="sesionError">Se requiere inicio de sesión</p>
+                <% } %>
             </div>
         </div>
         <article>

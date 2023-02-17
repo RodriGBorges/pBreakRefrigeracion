@@ -165,6 +165,11 @@
     padding-bottom: 5px;
 }
 
+.headerNav li.sesionError, .headerNav p.sesionError {
+    color: crimson;
+    user-select: none;
+}
+
 @media (min-width: 467px) {
 
     .headerNav section.hSectionGeneral div div.navDivMobile nav {
