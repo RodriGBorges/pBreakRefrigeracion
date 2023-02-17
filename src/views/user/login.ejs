@@ -21,7 +21,7 @@
                             <small class="errors"><%= errors.usuario.msg %></small>
                         <% } %>
                         <div class="divContraseña">
-                            <input type="password" name="contraseña" class="inputUser" placeholder="Contraseña" >
+                            <input type="password" name="contraseña" class="inputUser" placeholder="Contraseña" id="inputContraseña">
                             <i class="ojitoAct fas fa-eye-slash" id="ocultarContraseña"></i>
                             <i class="ojitoDes fas fa-eye" id="verContraseña"></i>
                         </div>
@@ -45,4 +45,5 @@
     <%- include('../partials/footer') %>
 </body>
 <script src="../../../javascripts/general.js"></script>
+<script src="../../../javascripts/login.js"></script>
 </html>
