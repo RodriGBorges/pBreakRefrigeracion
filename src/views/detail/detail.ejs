@@ -28,7 +28,7 @@
                         <td class="infoCliente"><b>Dirección:</b> <%= presupuesto.direccionCliente %></td>
                     </tr>
                     <tr>
-                        <td class="infoCliente"><b>Teléfono:</b> <%= presupuesto.telefonoCliente %></td>
+                        <td class="infoCliente"><b>Teléfono:</b> <%= presupuesto.telefonoCliente === 0 ? "" : presupuesto.telefonoCliente %></td>
                     </tr>
                 </tbody>
             </table>
@@ -59,7 +59,7 @@
                             </td>
                         </tr>
                     <% } %>
-                    <% if (presupuesto.trabajo1 || presupuesto.precio1) { %>
+                    <% if (presupuesto.trabajo1 !== "" || presupuesto.precio1 !== "0") { %>
                         <tr>
                             <td class="trabajos">
                                 <%= presupuesto.trabajo1 %>
@@ -76,7 +76,7 @@
                             </tr>
                         <% } %>
                     <% } %>
-                    <% if (presupuesto.trabajo2 || presupuesto.precio2) { %>
+                    <% if (presupuesto.trabajo2 !== "" || presupuesto.precio2 !== "0") { %>
                         <tr>
                             <td class="trabajos">
                                 <%= presupuesto.trabajo2 %>
@@ -93,7 +93,7 @@
                             </tr>
                         <% } %>
                     <% } %>
-                    <% if (presupuesto.trabajo3 || presupuesto.precio3) { %>
+                    <% if (presupuesto.trabajo3 !== "" || presupuesto.precio3 !== "0") { %>
                         <tr>
                             <td class="trabajos">
                                 <%= presupuesto.trabajo3 %>
@@ -110,7 +110,7 @@
                             </tr>
                         <% } %>
                     <% } %>
-                    <% if (presupuesto.trabajo4 || presupuesto.precio4) { %>
+                    <% if (presupuesto.trabajo4 !== "" || presupuesto.precio4 !== "0") { %>
                         <tr>
                             <td class="trabajos">
                                 <%= presupuesto.trabajo4 %>
@@ -127,7 +127,7 @@
                             </tr>
                         <% } %>
                     <% } %>
-                    <% if (presupuesto.trabajo5 || presupuesto.precio5) { %>
+                    <% if (presupuesto.trabajo5 !== "" || presupuesto.precio5 !== "0") { %>
                         <tr>
                             <td class="trabajos">
                                 <%= presupuesto.trabajo5 %>
@@ -144,7 +144,7 @@
                             </tr>
                         <% } %>
                     <% } %>
-                    <% if (presupuesto.trabajo6 || presupuesto.precio6) { %>
+                    <% if (presupuesto.trabajo6 !== "" || presupuesto.precio6 !== "0") { %>
                         <tr>
                             <td class="trabajos">
                                 <%= presupuesto.trabajo6 %>
@@ -161,7 +161,7 @@
                             </tr>
                         <% } %>
                     <% } %>
-                    <% if (presupuesto.trabajo7 || presupuesto.precio7) { %>
+                    <% if (presupuesto.trabajo7 !== "" || presupuesto.precio7 !== "0") { %>
                         <tr>
                             <td class="trabajos">
                                 <%= presupuesto.trabajo7 %>
@@ -178,7 +178,7 @@
                             </tr>
                         <% } %>
                     <% } %>
-                    <% if (presupuesto.trabajo8 || presupuesto.precio8) { %>
+                    <% if (presupuesto.trabajo8 !== "" || presupuesto.precio8 !== "0") { %>
                         <tr>
                             <td class="trabajos">
                                 <%= presupuesto.trabajo8 %>
@@ -195,7 +195,7 @@
                             </tr>
                         <% } %>
                     <% } %>
-                    <% if (presupuesto.trabajo9 || presupuesto.precio9) { %>
+                    <% if (presupuesto.trabajo9 !== "" || presupuesto.precio9 !== "0") { %>
                         <tr>
                             <td class="trabajos">
                                 <%= presupuesto.trabajo9 %>
@@ -212,7 +212,7 @@
                             </tr>
                         <% } %>
                     <% } %>
-                    <% if (presupuesto.trabajo10 || presupuesto.precio10) { %>
+                    <% if (presupuesto.trabajo10 !== "" || presupuesto.precio10 !== "0") { %>
                         <tr>
                             <td class="trabajos">
                                 <%= presupuesto.trabajo10 %>
@@ -229,7 +229,7 @@
                             </tr>
                         <% } %>
                     <% } %>
-                    <% if (presupuesto.trabajo11 || presupuesto.precio11) { %>
+                    <% if (presupuesto.trabajo11 !== "" || presupuesto.precio11 !== "0") { %>
                         <tr>
                             <td class="trabajos">
                                 <%= presupuesto.trabajo11 %>
