@@ -30,8 +30,8 @@ module.exports = {
                 }
 
             })
-            .catch(error => {
-                res.render('user/login', { errorLogin: `${error}`, oldData: req.body });
+            .catch(() => {
+                res.render('user/login', { errorLogin: "Usuario o contraseña incorrectos", oldData: req.body });
             })
 
         } else {
