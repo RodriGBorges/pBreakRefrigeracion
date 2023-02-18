@@ -1,8 +1,6 @@
-const usuarios = require('../data/usuarios.json');
-
 const recordarme = (req, res , next) =>{
-    if(req.cookies.recordarUsuario && req.session.usuarioLogueado === undefined) {
-        req.session.adminLogueado = usuarios.find(e => e.user === req.cookies.recordarUsuario)
+    if(req.cookies.recordarUsuario) {
+        req.session.adminLogueado = req.cookies.recordarUsuario
     }
     next()
 }

@@ -1,6 +1,6 @@
 const bcrypt = require('bcryptjs');
-const usuarios = require('../data/usuarios.json');
 const { validationResult } = require('express-validator');
+const db = require('../database/models');
 
 module.exports = {
 
@@ -13,15 +13,26 @@ module.exports = {
         if (loginErrors.isEmpty()) {
             const { usuario, contraseña } = req.body;
             
-            const usuarioAdmin = usuarios.find( e => e.id === 1);
-            if (usuario == usuarioAdmin.user && bcrypt.compareSync(contraseña, usuarioAdmin.password)) {
-                req.session.adminLogueado = usuarioAdmin;
-                req.body.recordarme !== undefined ? res.cookie('recordarUsuario', usuario, { maxAge: 60*1000*60*24 }) : null;
+            db.Usuario.findOne({
+                where: {
+                    nombreUsuario: usuario
+                }
+            })
+            .then(usuario => {
+                
+                if (bcrypt.compareSync(contraseña, usuario.contraseña)) {
+                    req.session.adminLogueado = usuario;
+                    req.body.recordarme !== undefined ? res.cookie('recordarUsuario', usuario, { maxAge: 60*1000*60*24 }) : null;
+    
+                    res.redirect('/');
+                } else {
+                    res.render('user/login', { errorLogin: "Usuario o contraseña incorrectos", oldData: req.body });
+                }
 
-                res.redirect('/');
-            } else {
+            })
+            .catch(() => {
                 res.render('user/login', { errorLogin: "Usuario o contraseña incorrectos", oldData: req.body });
-            }
+            })
 
         } else {
             res.render('user/login', { errors: loginErrors.mapped(), oldData: req.body });
