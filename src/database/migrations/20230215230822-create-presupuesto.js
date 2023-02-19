@@ -38,7 +38,7 @@ module.exports = {
         allowNull: true
       },
       precio0: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.INTEGER,
         allowNull: true
       },
       descripcion: {
@@ -54,7 +54,7 @@ module.exports = {
         allowNull: true
       },
       precioTrabajoTotal: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.INTEGER,
         allowNull: true
       },
       trabajo1: {
@@ -62,7 +62,7 @@ module.exports = {
         allowNull: true
       },
       precio1: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.INTEGER,
         allowNull: true
       },
       descripcion1: {
@@ -74,7 +74,7 @@ module.exports = {
         allowNull: true
       },
       precio2: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.INTEGER,
         allowNull: true
       },
       descripcion2: {
@@ -86,7 +86,7 @@ module.exports = {
         allowNull: true
       },
       precio3: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.INTEGER,
         allowNull: true
       },
       descripcion3: {
@@ -98,7 +98,7 @@ module.exports = {
         allowNull: true
       },
       precio4: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.INTEGER,
         allowNull: true
       },
       descripcion4: {
@@ -110,7 +110,7 @@ module.exports = {
         allowNull: true
       },
       precio5: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.INTEGER,
         allowNull: true
       },
       descripcion5: {
@@ -122,7 +122,7 @@ module.exports = {
         allowNull: true
       },
       precio6: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.INTEGER,
         allowNull: true
       },
       descripcion6: {
@@ -134,7 +134,7 @@ module.exports = {
         allowNull: true
       },
       precio7: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.INTEGER,
         allowNull: true
       },
       descripcion7: {
@@ -146,7 +146,7 @@ module.exports = {
         allowNull: true
       },
       precio8: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.INTEGER,
         allowNull: true
       },
       descripcion8: {
@@ -158,7 +158,7 @@ module.exports = {
         allowNull: true
       },
       precio9: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.INTEGER,
         allowNull: true
       },
       descripcion9: {
@@ -170,7 +170,7 @@ module.exports = {
         allowNull: true
       },
       precio10: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.INTEGER,
         allowNull: true
       },
       descripcion10: {
@@ -182,7 +182,7 @@ module.exports = {
         allowNull: true
       },
       precio11: {
-        type: Sequelize.DECIMAL,
+        type: Sequelize.INTEGER,
         allowNull: true
       },
       descripcion11: {
