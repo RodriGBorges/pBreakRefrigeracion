@@ -52,6 +52,8 @@
     height: 25px;
     width: 250px;
     margin-bottom: 10px;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield
 }
 
 .crear section.container div.divContainer form div.divCliente input:focus, .crear section.container div.divContainer form div.divPresupuesto input:focus {
@@ -122,6 +124,8 @@
 
 .crear section.container div.divContainer form div.divTrabajos article div input.inputPrecio {
     width: 150px;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
 }
 
 .crear section.container div.divContainer form div.divTrabajos article.artBttn {
