@@ -1,9 +1,7 @@
 const db = require('../database/models');
 const { validationResult } = require('express-validator');
+const moment = require('moment-timezone')
 
-const dayjs = require('dayjs');
-dayjs.extend(require('dayjs/plugin/timezone'));
-dayjs.extend(require('dayjs/plugin/utc'));
 
 module.exports = {
     vistaCrear: (req, res) => {
@@ -41,7 +39,7 @@ module.exports = {
                 ...nuevoPresupuesto,
                 nPresupuesto: nPresupuesto === "" ? 1 : nPresupuesto,
                 telefonoCliente: telefonoCliente === "" ? 0 : telefonoCliente,
-                fechaPresupuesto: dayjs.tz().format('DD/MM/YYYY'),
+                fechaPresupuesto: moment().tz("America/Argentina/Buenos_Aires").format('DD/MM/YYYY'),
                 precioTrabajoTotal: totalPrecio,
                 precio0: precio0 === "" ? 0 : precio0,
                 precio0: precio1 === "" ? 0 : precio1,
@@ -91,7 +89,7 @@ module.exports = {
                 telefonoCliente: telefonoCliente === "" ? 0 : telefonoCliente,
                 garantia: garantia,
                 nPresupuesto: nPresupuesto == "" ? 1 : nPresupuesto,
-                fechaPresupuesto: actualizarFecha == "on" ? dayjs.tz().format('DD/MM/YYYY') : fechaPresupuesto,
+                fechaPresupuesto: actualizarFecha == "on" ? moment().tz("America/Argentina/Buenos_Aires").format('DD/MM/YYYY') : fechaPresupuesto,
                 descripcion: descripcion,
                 precioTrabajoTotal: totalPrecio,
                 trabajo0: trabajo0,
