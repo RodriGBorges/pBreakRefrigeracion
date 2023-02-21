@@ -13,7 +13,7 @@
                 <form action="/admin/editar/<%= presupuesto.id %>?_method=PUT" method="POST">
                     <div class="divPClave">
                         <label for="clave"><b>Clave:</b></label>
-                        <input type="text" name="clave" id="clave" placeholder="Palabra clave" value="<%= presupuesto.clave == 0 ? "" : presupuesto.clave %>">
+                        <input type="text" name="clave" id="clave" placeholder="Palabra clave" value="<%= presupuesto.clave %>">
                     </div>
                     <div class="divCliente">
                         <h4>Datos del cliente</h4>
@@ -50,110 +50,110 @@
                             <textarea name="descripcion0" placeholder="Descripción del trabajo"><%= presupuesto.descripcion0 %></textarea>
                         </div>
                         <article>
-                            <input type="text" name="trabajo1" value="<%= presupuesto.trabajo1 ? presupuesto.trabajo1 : "" %>" placeholder="Trabajo realizado">
+                            <input type="text" name="trabajo1" value="<%= presupuesto.trabajo1 %>" placeholder="Trabajo realizado">
                             <div>
                                 <label for="precio"><b>$:</b></label>
-                                <input type="number" name="precio1" class="inputPrecio" value="<%= presupuesto.precio1 ? presupuesto.precio1 : "" %>" placeholder="Precio">
+                                <input type="number" name="precio1" class="inputPrecio" value="<%= presupuesto.precio1 %>" placeholder="Precio">
                             </div>
                         </article>
                         <div class="divText">
                             <textarea name="descripcion1" placeholder="Descripción del trabajo"><%= presupuesto.descripcion1 %></textarea>
                         </div>
                         <article>
-                            <input type="text" name="trabajo2" value="<%= presupuesto.trabajo2 ? presupuesto.trabajo2 : "" %>" placeholder="Trabajo realizado">
+                            <input type="text" name="trabajo2" value="<%= presupuesto.trabajo2 %>" placeholder="Trabajo realizado">
                             <div>
                                 <label for="precio"><b>$:</b></label>
-                                <input type="number" name="precio2" class="inputPrecio" value="<%= presupuesto.precio2 ? presupuesto.precio2 : "" %>" placeholder="Precio">
+                                <input type="number" name="precio2" class="inputPrecio" value="<%= presupuesto.precio2 %>" placeholder="Precio">
                             </div>
                         </article>
                         <div class="divText">
                             <textarea name="descripcion2" placeholder="Descripción del trabajo"><%= presupuesto.descripcion2 %></textarea>
                         </div>
                         <article>
-                            <input type="text" name="trabajo3" value="<%= presupuesto.trabajo3 ? presupuesto.trabajo3 : "" %>" placeholder="Trabajo realizado">
+                            <input type="text" name="trabajo3" value="<%= presupuesto.trabajo3 %>" placeholder="Trabajo realizado">
                             <div>
                                 <label for="precio"><b>$:</b></label>
-                                <input type="number" name="precio3" class="inputPrecio" value="<%= presupuesto.precio3 ? presupuesto.precio3 : "" %>" placeholder="Precio">
+                                <input type="number" name="precio3" class="inputPrecio" value="<%= presupuesto.precio3 %>" placeholder="Precio">
                             </div>
                         </article>
                         <div class="divText">
                             <textarea name="descripcion3" placeholder="Descripción del trabajo"><%= presupuesto.descripcion3 %></textarea>
                         </div>
                         <article>
-                            <input type="text" name="trabajo4" value="<%= presupuesto.trabajo4 ? presupuesto.trabajo4 : "" %>" placeholder="Trabajo realizado">
+                            <input type="text" name="trabajo4" value="<%= presupuesto.trabajo4 %>" placeholder="Trabajo realizado">
                             <div>
                                 <label for="precio"><b>$:</b></label>
-                                <input type="number" name="precio4" class="inputPrecio" value="<%= presupuesto.precio4 ? presupuesto.precio4 : "" %>" placeholder="Precio">
+                                <input type="number" name="precio4" class="inputPrecio" value="<%= presupuesto.precio4 %>" placeholder="Precio">
                             </div>
                         </article>
                         <div class="divText">
                             <textarea name="descripcion4" placeholder="Descripción del trabajo"><%= presupuesto.descripcion4 %></textarea>
                         </div>
                         <article>
-                            <input type="text" name="trabajo5" value="<%= presupuesto.trabajo5 ? presupuesto.trabajo5 : "" %>" placeholder="Trabajo realizado">
+                            <input type="text" name="trabajo5" value="<%= presupuesto.trabajo5 %>" placeholder="Trabajo realizado">
                             <div>
                                 <label for="precio"><b>$:</b></label>
-                                <input type="number" name="precio5" class="inputPrecio" value="<%= presupuesto.precio5 ? presupuesto.precio5 : "" %>" placeholder="Precio">
+                                <input type="number" name="precio5" class="inputPrecio" value="<%= presupuesto.precio5 %>" placeholder="Precio">
                             </div>
                         </article>
                         <div class="divText">
                             <textarea name="descripcion5" placeholder="Descripción del trabajo"><%= presupuesto.descripcion5 %></textarea>
                         </div>
                         <article>
-                            <input type="text" name="trabajo6" value="<%= presupuesto.trabajo6 ? presupuesto.trabajo6 : "" %>" placeholder="Trabajo realizado">
+                            <input type="text" name="trabajo6" value="<%= presupuesto.trabajo6 %>" placeholder="Trabajo realizado">
                             <div>
                                 <label for="precio"><b>$:</b></label>
-                                <input type="number" name="precio6" class="inputPrecio" value="<%= presupuesto.precio6 ? presupuesto.precio6 : "" %>" placeholder="Precio">
+                                <input type="number" name="precio6" class="inputPrecio" value="<%= presupuesto.precio6 %>" placeholder="Precio">
                             </div>
                         </article>
                         <div class="divText">
                             <textarea name="descripcion6" placeholder="Descripción del trabajo"><%= presupuesto.descripcion6 %></textarea>
                         </div>
                         <article>
-                            <input type="text" name="trabajo7" value="<%= presupuesto.trabajo7 ? presupuesto.trabajo7 : "" %>" placeholder="Trabajo realizado">
+                            <input type="text" name="trabajo7" value="<%= presupuesto.trabajo7 %>" placeholder="Trabajo realizado">
                             <div>
                                 <label for="precio"><b>$:</b></label>
-                                <input type="number" name="precio7" class="inputPrecio" value="<%= presupuesto.precio7 ? presupuesto.precio7 : "" %>" placeholder="Precio">
+                                <input type="number" name="precio7" class="inputPrecio" value="<%= presupuesto.precio7 %>" placeholder="Precio">
                             </div>
                         </article>
                         <div class="divText">
                             <textarea name="descripcion7" placeholder="Descripción del trabajo"><%= presupuesto.descripcion7 %></textarea>
                         </div>
                         <article>
-                            <input type="text" name="trabajo8" value="<%= presupuesto.trabajo8 ? presupuesto.trabajo8 : "" %>" placeholder="Trabajo realizado">
+                            <input type="text" name="trabajo8" value="<%= presupuesto.trabajo8 %>" placeholder="Trabajo realizado">
                             <div>
                                 <label for="precio"><b>$:</b></label>
-                                <input type="number" name="precio8" class="inputPrecio" value="<%= presupuesto.precio8 ? presupuesto.precio8 : "" %>" placeholder="Precio">
+                                <input type="number" name="precio8" class="inputPrecio" value="<%= presupuesto.precio8 %>" placeholder="Precio">
                             </div>
                         </article>
                         <div class="divText">
                             <textarea name="descripcion8" placeholder="Descripción del trabajo"><%= presupuesto.descripcion8 %></textarea>
                         </div>
                         <article>
-                            <input type="text" name="trabajo9" value="<%= presupuesto.trabajo9 ? presupuesto.trabajo9 : "" %>" placeholder="Trabajo realizado">
+                            <input type="text" name="trabajo9" value="<%= presupuesto.trabajo9 %>" placeholder="Trabajo realizado">
                             <div>
                                 <label for="precio"><b>$:</b></label>
-                                <input type="number" name="precio9" class="inputPrecio" value="<%= presupuesto.precio9 ? presupuesto.precio9 : "" %>" placeholder="Precio">
+                                <input type="number" name="precio9" class="inputPrecio" value="<%= presupuesto.precio9 %>" placeholder="Precio">
                             </div>
                         </article>
                         <div class="divText">
                             <textarea name="descripcion9" placeholder="Descripción del trabajo"><%= presupuesto.descripcion9 %></textarea>
                         </div>
                         <article>
-                            <input type="text" name="trabajo10" value="<%= presupuesto.trabajo10 ? presupuesto.trabajo10 : "" %>" placeholder="Trabajo realizado">
+                            <input type="text" name="trabajo10" value="<%= presupuesto.trabajo10 %>" placeholder="Trabajo realizado">
                             <div>
                                 <label for="precio"><b>$:</b></label>
-                                <input type="number" name="precio10" class="inputPrecio" value="<%= presupuesto.precio10 ? presupuesto.precio10 : "" %>" placeholder="Precio">
+                                <input type="number" name="precio10" class="inputPrecio" value="<%= presupuesto.precio10 %>" placeholder="Precio">
                             </div>
                         </article>
                         <div class="divText">
                             <textarea name="descripcion10" placeholder="Descripción del trabajo"><%= presupuesto.descripcion10 %></textarea>
                         </div>
                         <article>
-                            <input type="text" name="trabajo11" value="<%= presupuesto.trabajo11 ? presupuesto.trabajo11 : "" %>" placeholder="Trabajo realizado">
+                            <input type="text" name="trabajo11" value="<%= presupuesto.trabajo11 %>" placeholder="Trabajo realizado">
                             <div>
                                 <label for="precio"><b>$:</b></label>
-                                <input type="number" name="precio11" class="inputPrecio" value="<%= presupuesto.precio11 ? presupuesto.precio11 : "" %>" placeholder="Precio">
+                                <input type="number" name="precio11" class="inputPrecio" value="<%= presupuesto.precio11 %>" placeholder="Precio">
                             </div>
                         </article>
                         <div class="divText">
@@ -162,7 +162,7 @@
                     </div>
                     <h4 class="descripcion">Texto adicional</h4>
                     <div class="divDescripcion">
-                        <textarea name="descripcion"><%= presupuesto.descripcion == 0 ? "" : presupuesto.descripcion %></textarea>
+                        <textarea name="descripcion"><%= presupuesto.descripcion %></textarea>
                     </div>
                     <button type="submit" class="bttnCrear">Guardar</button>
                 </form>
