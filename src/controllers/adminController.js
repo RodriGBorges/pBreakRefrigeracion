@@ -59,7 +59,7 @@ module.exports = {
                 res.redirect(`/presupuesto/${presupuesto.id}`);
             })
             .catch(error => {
-                res.send(req.body);
+                res.send(`No se pudo crear el presupuesto \n${error}`);
             })
         } else {
             res.render('admin/crear');
